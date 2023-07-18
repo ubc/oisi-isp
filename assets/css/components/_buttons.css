@@ -1,0 +1,206 @@
+/*
+--button-color
+--button-bg
+--button-color--alt
+--button-bg--alt
+--button-border
+*/
+.wp-block-search__button,
+.wp-element-button,
+.button-standard,
+.button-tertiary,
+.button-outline,
+.wp-block-button > .wp-block-button__link {
+	padding: 7px 24px !important;
+	border-radius: 6px;
+
+	font-size: 14px;
+	font-family: var(--opensans);
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	line-height: 32px;
+
+	justify-content: center;
+	display: inline-flex;
+	align-items: center;
+
+	box-shadow: var(--shadow-0);
+	transition: var(--transition);
+	position: relative;
+	outline: none;
+
+	/* Variables */
+	color: var(--button-color, #fff) !important;
+	background: var(--button-bg, var(--ubc-primary)) !important;
+	border: solid 1px var(--button-border, var(--ubc-primary)) !important;
+
+	&[disabled] {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+
+	&::after {
+		content: "";
+		transition: var(--transition);
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 6px;
+
+		/* border: solid 1px var(--ubc-blue-1); */
+		pointer-events: none;
+
+		/* Variables */
+		border: solid 1px var(--button-border, var(--ubc-blue-1));
+	}
+
+	&:hover {
+		box-shadow: var(--shadow-2);
+
+		/* Variables */
+		background: var(--button-bg--hover, var(--button-bg--alt, var(--ubc-primary))) !important;
+		color: var(--button-color--hover, var(--button-color--alt, #fff)) !important;
+	}
+
+	&:focus {
+
+		/* Variables */
+		background: var(--button-color--focus, var(--button-bg--alt, var(--ubc-primary))) !important;
+		color: var(--button-color--focus, var(--button-color--alt, #fff)) !important;
+
+		&::after {
+			top: -4px;
+			left: -4px;
+			right: -4px;
+			bottom: -4px;
+			opacity: 1;
+			border-radius: 10px;
+		}
+	}
+
+	&:active {
+
+		/* Variables */
+		background: var(--button-bg--active, var(--ubc-grey-1)) !important;
+		color: var(--button-color--active, #fff) !important;
+	}
+
+	& > svg,
+	& > img {
+		margin-left: var(--scale-xs);
+		max-width: var(--scale);
+		max-height: var(--scale);
+	}
+}
+
+.button-outline[class],
+.wp-block-button.is-style-outline {
+
+	/*  Standard */
+	--button-color: var(--ubc-primary);
+	--button-bg: transparent;
+
+	/* Hover & Focus */
+	--button-color--alt: #fff;
+	--button-bg--alt: var(--ubc-primary);
+
+	/* Active */
+	--button-bg--active: var(--ubc-grey-1);
+	--button-color--active: #fff;
+}
+
+.button-tertiary[class],
+.wp-block-button.is-style-tertiary > .wp-block-button__link {
+	--button-color: var(--ubc-blue-1);
+	--button-color--hover: var(--ubc-blue-2);
+	--button-color--focus: var(--ubc-primary);
+	--button-color--active: var(--ubc-primary);
+
+	padding: 0 !important;
+	border-radius: 0 !important;
+	border: none !important;
+	box-shadow: none !important;
+	background: none !important;
+
+	line-height: 28px;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+	position: relative;
+
+	&:focus {
+
+		&::after {
+			left: -8px;
+			right: -8px;
+			top: 0;
+			bottom: -4px;
+		}
+	}
+}
+
+.button-tertiary {
+	margin: 0;
+	font-size: 14px !important;
+	font-family: var(--opensans);
+	font-weight: 700;
+	line-height: 100%;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	justify-content: flex-start;
+}
+
+.has-ubc-blue-background-color,
+.has-ubc-black-background-color,
+.has-ubc-secondary-blue-background-color,
+.has-isp-bistre-background-color,
+.has-isp-camelian-background-color,
+.has-isp-calcite-background-color {
+
+	.button-standard,
+	.wp-block-button {
+		--button-border: #fff;
+
+		/*  Standard */
+		--button-color: var(--ubc-primary);
+		--button-bg: #fff;
+
+		/* Hover & Focus */
+		--button-color--alt: var(--ubc-primary);
+		--button-bg--alt: #fff;
+
+		/* Active */
+		--button-bg--active: var(--ubc-primary);
+		--button-color--active: #fff;
+	}
+
+	.button-outline,
+	.wp-block-button.is-style-outline {
+
+		/*  Standard */
+		--button-color: #fff;
+		--button-bg: transparent;
+
+		/* Hover & Focus */
+		--button-color--alt: var(--ubc-primary);
+		--button-bg--alt: #fff;
+
+		/* Active */
+		--button-bg--active: var(--ubc-primary);
+		--button-color--active: #fff;
+	}
+
+	.button-tertiary,
+	.wp-block-button.is-style-tertiary > .wp-block-button__link {
+		--button-border: #fff;
+		--button-color: #fff;
+		--button-color--hover: var(--ubc-blue-5);
+		--button-color--focus: #fff;
+		--button-color--active: #fff;
+	}
+}

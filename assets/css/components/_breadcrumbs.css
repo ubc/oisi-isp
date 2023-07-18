@@ -1,0 +1,166 @@
+.isp-breadcrumbs {
+	position: relative;
+	padding-bottom: 32px;
+
+	@media (--query-sm) {
+		padding-bottom: 0;
+	}
+
+	@media (--query-mx-sm) {
+		overflow: hidden;
+	}
+}
+
+.breadcrumb {
+	background: none !important;
+
+	.divider {
+		color: var(--calcite);
+		margin: 0 6px;
+	}
+}
+
+.isp-breadcrumbs--row {
+	max-width: 1288px;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.isp-breadcrumbs--container {
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	position: relative;
+	z-index: 3;
+
+	.breadcrumb {
+		font-size: 12px;
+		background: none;
+		color: var(--ubc-grey-1);
+	}
+
+	.trail-end {
+		color: var(--ubc-primary);
+	}
+
+	.divider {
+		color: var(--calcite);
+		margin: 0 6px;
+	}
+
+	@media (--query-sm) {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		justify-content: space-between;
+		align-items: center;
+		min-height: 84px;
+
+		.breadcrumb {
+			grid-column: 3 / span 9;
+			padding: 0 24px;
+		}
+	}
+}
+
+.isp-sharepage {
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 6px 6px 6px 16px;
+	gap: 8px;
+
+	/* ISP/Calcite */
+	background: var(--calcite);
+
+	/* UBC/White */
+	border: 1px solid #fff;
+	border-radius: 8px;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 3;
+	flex-grow: 0;
+	z-index: 3;
+
+	&:hover,
+	&:focus {
+		background: var(--bistre);
+
+		.isp-sharepage--text {
+			left: 12px;
+		}
+
+		.isp-sharepage--icon {
+			transform: scale(2);
+			opacity: 0;
+		}
+	}
+}
+
+.isp-sharepage--text {
+	position: relative;
+	left: 0;
+	transition: var(--transition);
+	font-family: var(--opensans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 100%;
+
+	/* identical to box height, or 12px */
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	/* UBC/White */
+	color: #fff;
+}
+
+.isp-sharepage--icon {
+	width: 24px;
+	height: 24px;
+	transition: var(--transition);
+}
+
+/*  Small Header Style */
+.isp-breadcrumbs--full {
+	background: var(--header-gradient);
+}
+
+@media (--query-sm) {
+
+	.isp-breadcrumbs--small {
+		position: relative;
+
+		.isp-breadcrumbs--row {
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 15%;
+				bottom: 0;
+				width: 100vw;
+				background: var(--header-gradient);
+				border-radius: 0 0 80px 0;
+				z-index: 2;
+			}
+		}
+	}
+}
+
+.page-template-page-level-1 {
+
+	@media (--query-mx-sm) {
+
+		.ubc-isp-nav__container {
+			display: none !important;
+		}
+	}
+}

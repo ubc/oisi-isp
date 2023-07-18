@@ -1,0 +1,22 @@
+.isp-bucket {
+
+	.wp-block-group__inner-container {
+		padding: 0;
+	}
+
+	& a {
+		display: block;
+		position: relative;
+		z-index: 1;
+		padding: 24px 24px 6px;
+		box-shadow: none;
+		border-radius: 16px;
+		transition: all 0.3s ease-in-out;
+		text-decoration: none;
+
+		&:hover {
+			box-shadow: var(--shadow-1);
+			background: #fff;
+		}
+	}
+}

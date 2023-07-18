@@ -1,0 +1,106 @@
+:root {
+
+	/* Site Colors */
+	--bistre: #3f261a;
+	--camelian: #b20e18;
+	--calcite: #b55a18;
+	--sand-1: #f0e6d9;
+	--sand-2: #f8f4ee;
+	--sand-3: #fbf9f6;
+
+	--warning: #f1dc54;
+	--error: #c7333c;
+	--success: #6fca93;
+
+	--header-gradient: linear-gradient(275deg, rgb(248, 244, 238) 0%, rgb(252, 251, 249) 100%);
+
+	/* UBC  */
+	--ubc-primary: #002145;
+	--ubc-grey-1: #2f5d7c;
+	--ubc-grey-2: #5e869f;
+	--ubc-grey-3: #98b2c3;
+	--ubc-grey-4: #c3d0db;
+
+	--ubc-blue-1: #0055b7;
+	--ubc-blue-2: #00a7e1;
+	--ubc-blue-3: #40b4e5;
+	--ubc-blue-4: #6ec4e8;
+	--ubc-blue-5: #97d4e9;
+}
+
+/* block default styles styles */
+.wp-block-button .has-isp-bistre-color,
+.has-isp-bistre-color {
+	color: var(--bistre);
+}
+
+.wp-block-button .has-isp-calcite-color,
+.has-isp-calcite-color {
+	color: var(--calcite);
+}
+
+.wp-block-button .has-isp-camelian-color,
+.has-isp-camelian-color {
+	color: var(--camelian);
+}
+
+.wp-block-button .has-isp-sand_1-color,
+.has-isp-sand_1-color {
+	color: var(--sand-1);
+}
+
+.wp-block-button .has-isp-sand_2-color,
+.has-isp-sand_2-color {
+	color: var(--sand-2);
+}
+
+.wp-block-button .has-isp-sand_3-color,
+.has-isp-sand_3-color {
+	color: var(--sand-3);
+}
+
+.wp-block-button .has-ubc-grey-color,
+.has-ubc-grey-color {
+	color: var(--ubc-grey-1);
+}
+
+.wp-block-button .has-ubc-secondary-grey-color,
+.has-ubc-secondary-grey-color {
+	color: var(--ubc-grey-2);
+}
+
+.wp-block-button .has-ubc-tertiary-grey-color,
+.has-ubc-tertiary-grey-color {
+	color: var(--ubc-grey-3);
+}
+
+.wp-block-button .has-ubc-quaternary-grey-color,
+.has-ubc-quaternary-grey-color {
+	color: var(--ubc-grey-4);
+}
+
+/* block background styles styles */
+.has-isp-bistre-background-color {
+	background-color: #3f261a;
+	background-color: var(--bistre);
+}
+
+.has-isp-camelian-background-color {
+	background-color: var(--camelian);
+}
+
+.has-isp-calcite-background-color {
+	background-color: var(--calcite);
+}
+
+.has-isp-sand-1-background-color {
+	background-color: var(--sand-1);
+}
+
+.has-isp-sand-2-background-color {
+	background-color: var(--sand-2);
+}
+
+.has-isp-sand-3-background-color {
+	background-color: var(--sand-3);
+}

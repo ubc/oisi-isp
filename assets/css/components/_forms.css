@@ -1,0 +1,228 @@
+#container {
+
+	.gfield_label {
+		color: #000;
+		font-size: 16px;
+		font-family: var(--opensans);
+		font-weight: 600;
+		line-height: 100%;
+		margin-bottom: 8px;
+	}
+
+	.gform_wrapper {
+
+		& input[type="color"],
+		input[type="date"],
+		input[type="datetime-local"],
+		input[type="datetime"],
+		input[type="email"],
+		input[type="month"],
+		input[type="number"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="text"],
+		input[type="time"],
+		input[type="url"],
+		input[type="week"],
+		select,
+		textarea {
+			color: #4e5862;
+			font-size: 16px;
+			font-family: var(--opensans);
+			line-height: 24px;
+			border-radius: 4px;
+			border: 1px solid var(--ubc-grey-4, #c3d0db);
+			background: var(--ubc-white, #fff);
+			padding: 8px 12px;
+			display: block;
+			height: auto;
+		}
+
+		& select {
+			appearance: none;
+			background:
+				#fff url(../../images/select-arrow.svg) no-repeat right
+				8px center;
+		}
+	}
+}
+
+div .gform_wrapper.gravity-theme .gfield_description {
+	color: #909090;
+}
+
+.gform_confirmation_message {
+	padding: 50px 15px 50px;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+div .gform_wrapper.gravity-theme .gfield_validation_message,
+div .gform_wrapper.gravity-theme .validation_message {
+	margin: 0;
+	border: none;
+	padding: 2px;
+	background: none;
+}
+
+.gfield {
+
+	& input[type="checkbox"],
+	& input[type="radio"] {
+		appearance: none;
+		margin: 0 12px 0 0;
+		transition: var(--transition);
+		width: 18px;
+		height: 18px;
+		border: 3px solid #fff;
+		background: #fff;
+		outline: 1px solid var(--ubc-grey-3, #98b2c3);
+		outline-offset: 0;
+
+		&:focus {
+			box-shadow: 0 0 0 3px var(--ubc-grey-4);
+
+			/* border: 3px solid var(--ubc-grey-4, #C3D0DB); */
+		}
+
+		&:checked {
+			background: var(--ubc-blue-1);
+		}
+	}
+
+	& input[type="radio"] {
+		border-radius: 50%;
+	}
+}
+
+.gfield .gchoice {
+	margin-bottom: 8px;
+}
+
+/* Toggle Checkbox */
+.gf_toggle {
+
+	.gchoice {
+		position: relative;
+	}
+
+	& input[type="checkbox"] {
+		appearance: none;
+		width: 48px;
+		height: 28px;
+		border-radius: 20px;
+		display: block;
+		cursor: pointer;
+		background: var(--ubc-primary);
+		border: none;
+		outline: none;
+	}
+
+	& label {
+
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+			cursor: pointer;
+			height: 22px;
+			width: 22px;
+			border-radius: 50%;
+			transition: var(--transition);
+			position: absolute;
+			top: 3px;
+			left: 3px;
+		}
+
+		&::before {
+			background:
+				#fff url(../../images/toggle-off.svg) no-repeat center
+				center;
+		}
+
+		&::after {
+			background:
+				#fff url(../../images/toggle-on.svg) no-repeat center
+				center;
+			opacity: 0;
+			transition: var(--transition);
+		}
+	}
+
+	& input[type="checkbox"]:checked {
+		background: var(--success);
+	}
+
+	& input[type="checkbox"]:checked + label::before,
+	& input[type="checkbox"]:checked + label::after {
+		left: 23px;
+		opacity: 1;
+	}
+}
+
+/*  Date Pickers */
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) {
+
+	.ui-datepicker-header[class] {
+
+		.ui-datepicker-next,
+		.ui-datepicker-prev {
+			background: var(--sand-1) !important;
+			color: var(--calcite);
+		}
+
+		.ui-datepicker-title select {
+			color: var(--ubc-primary);
+			text-align: center;
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: 0.42px;
+		}
+	}
+
+	.ui-datepicker-calendar[class] {
+
+		& td {
+			padding: 5px;
+			width: 42px;
+			height: 42px;
+
+			.ui-state-default {
+				height: 30px;
+				width: 30px;
+				text-align: center;
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 21px;
+			}
+
+			.ui-state-hover {
+				border: solid 1px var(--calcite);
+				background: var(--calcite);
+				color: #fff;
+			}
+
+			&.ui-state-disable {
+
+				.ui-state-default {
+					background: var(--ubc-grey-2);
+					opacity: 0.5;
+					pointer-events: none;
+				}
+			}
+
+			.ui-state-active {
+				background: var(--calcite);
+				color: #fff;
+				border: none;
+				text-align: center;
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 21px;
+			}
+		}
+	}
+}

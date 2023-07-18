@@ -1,0 +1,27 @@
+body {
+	--scale-xxs: 8px;
+	--scale-xs: 16px;
+	--scale-sm: 24px;
+	--scale: 32px;
+	--scale-lg: 48px;
+	--scale-xl: 64px;
+	--scale-xxl: 80px;
+
+	--wp--preset--spacing--20: 4px;
+	--wp--preset--spacing--30: var(--scale-xxs);
+	--wp--preset--spacing--40: var(--scale-xs);
+	--wp--preset--spacing--50: var(--scale-xs);
+	--wp--preset--spacing--60: var(--scale-sm);
+	--wp--preset--spacing--70: var(--scale);
+	--wp--preset--spacing--80: var(--scale-lg);
+
+	@media (--query-sm) {
+		--wp--preset--spacing--20: 4px;
+		--wp--preset--spacing--30: var(--scale-xxs);
+		--wp--preset--spacing--40: var(--scale-xs);
+		--wp--preset--spacing--50: var(--scale-sm);
+		--wp--preset--spacing--60: var(--scale);
+		--wp--preset--spacing--70: var(--scale-lg);
+		--wp--preset--spacing--80: var(--scale-xl);
+	}
+}

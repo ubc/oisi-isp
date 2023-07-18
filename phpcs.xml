@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Theme Coding Standards">
+
+	<!-- Set a description for this ruleset. -->
+	<description>A custom set of code standard rules to check for WordPress themes.</description>
+
+	<!-- Pass some flags to PHPCS:
+		 p flag: Show progress of the run.
+		 s flag: Show sniff codes in all reports.
+	-->
+	<!-- Ignore warnings, show progress of the run and show sniff names -->
+	<arg value="nps"/>
+
+
+	<arg name="basepath" value="./"/>
+	<arg name="extensions" value="php"/>
+	<arg name="severity" value="4"/>
+	<arg name="tab-width" value="4"/>
+	<arg name="parallel" value="80"/>
+	<arg name="cache" value=".phpcs-cache"/>
+	<arg name="colors"/>
+
+	
+
+	<!-- Check all files in this directory and the directories below it. -->
+	<file>.</file>
+
+	<!-- Exclude patterns. -->
+	<exclude-pattern>*/.git/*</exclude-pattern>
+	<exclude-pattern>.github/</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+
+
+	<config name="testVersion" value="7.4"/>
+	<config name="php_version" value="70407"/>
+
+
+
+	<!-- WordPress -->
+	
+
+	<rule ref="WordPress">
+		<!-- This rule does not apply here since the _s prefix should be changed by the theme author. -->
+		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.ShortPrefixPassed"/>
+		<exclude name="WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style" />
+		<exclude name="WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_pattern" />
+		<exclude name="WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_pattern_category" />
+		<exclude name="PHPCompatibility.Operators.NewOperators.t_coalesceFound" />
+		<exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase" />
+	</rule>
+    <rule ref="WPThemeReview"/>
+
+	<rule ref="WordPressVIPMinimum">
+		<exclude name="WordPressVIPMinimum.Security.Mustache.OutputNotation" />
+	</rule>
+
+	<rule ref="WordPress-Extra"/>
+	<rule ref="PSR2.Methods.FunctionClosingBrace"/>
+	
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array" value="ubc_collab"/>
+		</properties>
+	</rule>
+	<!-- Allow for theme specific exceptions to the file name rules based
+		 on the theme hierarchy. -->
+		 <rule ref="WordPress.Files.FileName">
+			<properties>
+				<property name="is_theme" value="true"/>
+			</properties>
+		</rule>
+	
+		<!-- Set the minimum supported WP version. This is used by several sniffs.
+			 The minimum version set here should be in line with the minimum WP version
+			 as set in the "Requires at least" tag in the readme.txt file. -->
+		<config name="minimum_supported_wp_version" value="4.5"/>
+	
+		<rule ref="WordPress.Arrays.MultipleStatementAlignment">
+			<properties>
+				<!-- No need to adjust alignment of large arrays when the item with the largest key is removed. -->
+				<property name="exact" value="false"/>
+				<!-- Don't align multi-line items if ALL items in the array are multi-line. -->
+				<property name="alignMultilineItems" value="!=100"/>
+				<!-- Array assignment operator should always be on the same line as the array key. -->
+				<property name="ignoreNewlines" value="false"/>
+			</properties>
+		</rule>
+	
+		<!-- Verify that everything in the global namespace is prefixed with a theme specific prefix.
+			 Multiple valid prefixes can be provided as a comma-delimited list. -->
+		<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+			<properties>
+				<property name="prefixes" type="array" value="_s" />
+			</properties>
+		</rule>
+	
+	
+
+    <rule ref="WordPress-Extra">
+        <!-- Exclude any rules here -->
+        <exclude name="Squiz.Commenting.FileComment.Missing"/>
+    </rule>
+
+</ruleset>

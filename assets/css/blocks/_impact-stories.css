@@ -1,0 +1,44 @@
+.isp-impact-stories {
+	padding: 0 24px !important;
+
+	.isp-cta-c,
+	.isp-cta-c > a,
+	.isp-cta-c .wp-block-cover {
+		height: 100%;
+	}
+
+	.isp-impact-stories__share {
+		flex-basis: calc(25% - 18px) !important;
+	}
+
+	.isp-impact-stories__posts {
+		height: 100%;
+	}
+
+	@media (--query-mx-lg) {
+
+		.isp-impact-stories__share {
+			flex-basis: calc(33%) !important;
+		}
+
+		.isp-impact-stories__posts {
+			gap: 16px;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+
+			> .wp-block-column {
+				min-width: calc(100% - 32px);
+			}
+		}
+	}
+
+	@media (--query-mx-sm) {
+		padding: 0 !important;
+
+		.isp-impact-stories__share,
+		.isp-impact-stories__posts {
+			padding: 0 16px;
+		}
+
+	}
+}

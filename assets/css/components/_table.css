@@ -1,0 +1,255 @@
+.dataTables_wrapper {
+	border-radius: 16px;
+	overflow: hidden;
+
+	&:last-child {
+		border-bottom-left-radius: 16px;
+		border-bottom-right-radius: 16px;
+	}
+
+	.tablepress {
+		margin: 25px 0;
+		display: table;
+		border: solid 1px var(--sand-1) !important;
+		border-radius: 16px 16px 0 0;
+		overflow: hidden;
+		position: relative;
+		--head-active-bg-color: var(--sand-3);
+		--head-active-text-color: var(--ubc-primary);
+
+		& caption {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+		}
+
+		& thead {
+			border-bottom: solid 1px var(--sand-3);
+
+			& tr {
+				background: #fff;
+			}
+		}
+
+		& th {
+			color: var(--ubc-primary);
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 130%;
+			padding: 24px;
+			background: none;
+			transition: var(--transition);
+			border-bottom: none !important;
+
+			+ th {
+				border-left: solid 1px var(--sand-1);
+			}
+
+			&.sorting {
+				padding-right: 50px;
+
+				&::before {
+					content: "";
+					width: 5px;
+					height: 5px;
+					border-top: solid 2px var(--ubc-primary);
+					border-left: solid 2px var(--ubc-primary);
+					rotate: 45deg;
+					right: 24px;
+				}
+
+				&::after {
+					content: "";
+					width: 5px;
+					height: 5px;
+					border-bottom: solid 2px var(--ubc-primary);
+					border-right: solid 2px var(--ubc-primary);
+					rotate: 45deg;
+					margin: 0;
+					right: 24px;
+				}
+			}
+		}
+
+		& td {
+			color: var(--bistre);
+			font-size: 14px;
+			line-height: 140%;
+			padding: 16px 24px;
+		}
+
+		& tr {
+			border: none !important;
+
+			& td {
+				background: none;
+			}
+		}
+
+		& tr.even {
+			background-color: #fdfcfb;
+		}
+
+		& tr.odd {
+			background-color: var(--sand-3);
+		}
+
+		& tr:hover {
+			background-color: var(--sand-2);
+
+			& td {
+				background: none;
+				color: var(--bistre) !important;
+			}
+		}
+	}
+
+	.dataTables_filter {
+		width: 100%;
+		padding: 24px;
+		background: #fdfcfb;
+		border: solid 1px var(--sand-1);
+		border-radius: 16px;
+		margin-bottom: 24px;
+
+		& label {
+			margin: 0;
+			width: 100%;
+			text-align: left;
+			text-transform: uppercase;
+
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 100%;
+			letter-spacing: 0.36px;
+
+			& input {
+				color: #4e5862;
+				font-size: 16px;
+				font-family: var(--opensans);
+				line-height: 24px;
+				border-radius: 4px;
+				border: 1px solid var(--ubc-grey-4, #c3d0db);
+				background: var(--ubc-white, #fff);
+				padding: 8px 12px;
+				display: block;
+				height: auto;
+				width: 100%;
+				margin: 8px 0 0;
+			}
+		}
+	}
+
+	.isp-table__cost {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: var(--bistre);
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 140%;
+
+		&::before {
+			content: "$";
+			opacity: 0.3;
+		}
+	}
+
+	.dataTables_info {
+		border: solid 1px var(--sand-1);
+		background: var(--sand-2);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 24px !important;
+		width: 100%;
+		margin: 0;
+
+		text-align: center;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+	}
+
+	.dataTables_paginate {
+		background: var(--sand-2);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 24px !important;
+		width: 100%;
+		margin: 0;
+		border: solid 1px var(--sand-1) !important;
+
+		& span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 4px;
+			margin: 0 16px;
+		}
+
+		.paginate_button {
+			width: 24px;
+			height: 24px;
+			padding: 2px;
+			border-radius: 4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: var(--bistre);
+			transition: var(--transition);
+			border: none !important;
+			margin: 0 !important;
+
+			&.current,
+			&:hover,
+			&:focus {
+				border: none !important;
+				color: #fff !important;
+				background: var(--bistre) !important;
+			}
+
+			&.next,
+			&.previous {
+				background:
+					url(../../images/table-arrow.svg) no-repeat center
+					center;
+				width: 35px;
+				height: 16px;
+				opacity: 1;
+				color: transparent;
+				text-indent: -999em;
+				overflow: hidden;
+				margin: 0 20px !important;
+
+				&::before,
+				&::after {
+					content: none;
+					display: none;
+				}
+
+				&.disabled {
+					pointer-events: none;
+					opacity: 0.3;
+				}
+
+				&:hover,
+				&:focus {
+					opacity: 0.7;
+					background:
+						url(../../images/table-arrow.svg) no-repeat
+						center center !important;
+				}
+			}
+
+			&.previous {
+				rotate: 180deg;
+			}
+		}
+	}
+}

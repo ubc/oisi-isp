@@ -1,0 +1,30 @@
+{
+	"name": "automattic/underscores",
+	"type": "wordpress-theme",
+	"description": "",
+	"keywords": [
+		"WordPress",
+		"Themes"
+	],
+	"homepage": "https://github.com/Automattic/_s",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Contributors",
+			"homepage": "https://github.com/Automattic/_s/graphs/contributors"
+		}
+	],
+	"require": {
+		"php": ">=5.6"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "dev-main"
+	},
+	"scripts": {},
+	"support": {
+		"issues": "https://github.com/Automattic/_s/issues",
+		"source": "https://github.com/Automattic/_s"
+	},
+	"config": {},
+	"minimum-stability": "dev"
+}

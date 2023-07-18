@@ -1,0 +1,13 @@
+/* Min Width Queries */
+@custom-media --query-xs (min-width: 550px);
+@custom-media --query-sm (min-width: 782px);
+@custom-media --query-md (min-width: 980px);
+@custom-media --query-lg (min-width: 1100px);
+@custom-media --query-xl (min-width: 1300px);
+
+/* Max Width Queries */
+@custom-media --query-mx-xs (max-width: 549px);
+@custom-media --query-mx-sm (max-width: 781px);
+@custom-media --query-mx-md (max-width: 979px);
+@custom-media --query-mx-lg (max-width: 1099px);
+@custom-media --query-mx-xl (max-width: 1299px);
