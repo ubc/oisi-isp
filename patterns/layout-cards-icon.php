@@ -22,7 +22,7 @@
 					<a class="" href="http://www.google.ca">
 						<!-- /wp:html -->
 
-						<!-- wp:group {"className":"isp-icon-bucket\u002d\u002dinner","layout":{"type":"constrained"}} -->
+						<!-- wp:group {"className":"isp-icon-bucket--inner","layout":{"type":"constrained"}} -->
 						<div class="wp-block-group isp-icon-bucket--inner">
 							<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 							<figure class="wp-block-image size-large"><img
@@ -41,7 +41,7 @@
 						</div>
 						<!-- /wp:group -->
 
-						<!-- wp:heading {"level":6,"className":"button-tertiary isp-icon-bucket\u002d\u002dbutton","fontSize":"small"} -->
+						<!-- wp:heading {"level":6,"className":"button-tertiary isp-icon-bucket--button","fontSize":"small"} -->
 						<h6 class="wp-block-heading button-tertiary isp-icon-bucket--button has-small-font-size">Learn
 							More</h6>
 						<!-- /wp:heading -->
@@ -61,7 +61,7 @@
 					<a class="" href="http://www.google.ca">
 						<!-- /wp:html -->
 
-						<!-- wp:group {"className":"isp-icon-bucket\u002d\u002dinner","layout":{"type":"constrained"}} -->
+						<!-- wp:group {"className":"isp-icon-bucket--inner","layout":{"type":"constrained"}} -->
 						<div class="wp-block-group isp-icon-bucket--inner">
 							<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 							<figure class="wp-block-image size-large"><img
@@ -80,7 +80,7 @@
 						</div>
 						<!-- /wp:group -->
 
-						<!-- wp:heading {"level":6,"className":"button-tertiary isp-icon-bucket\u002d\u002dbutton","fontSize":"small"} -->
+						<!-- wp:heading {"level":6,"className":"button-tertiary isp-icon-bucket--button","fontSize":"small"} -->
 						<h6 class="wp-block-heading button-tertiary isp-icon-bucket--button has-small-font-size">Learn
 							More</h6>
 						<!-- /wp:heading -->
@@ -100,7 +100,7 @@
 					<a class="" href="http://www.google.ca">
 						<!-- /wp:html -->
 
-						<!-- wp:group {"className":"isp-icon-bucket\u002d\u002dinner","layout":{"type":"constrained"}} -->
+						<!-- wp:group {"className":"isp-icon-bucket--inner","layout":{"type":"constrained"}} -->
 						<div class="wp-block-group isp-icon-bucket--inner">
 							<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 							<figure class="wp-block-image size-large"><img
@@ -120,7 +120,7 @@
 						</div>
 						<!-- /wp:group -->
 
-						<!-- wp:heading {"level":6,"className":"button-tertiary isp-icon-bucket\u002d\u002dbutton","fontSize":"small"} -->
+						<!-- wp:heading {"level":6,"className":"button-tertiary isp-icon-bucket--button","fontSize":"small"} -->
 						<h6 class="wp-block-heading button-tertiary isp-icon-bucket--button has-small-font-size">Learn
 							More</h6>
 						<!-- /wp:heading -->

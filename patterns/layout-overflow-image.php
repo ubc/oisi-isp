@@ -12,12 +12,12 @@
 
 ?>
 
-<!-- wp:group {"align":"full","className":"isp-layout\u002d\u002doverflow","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"isp-layout--overflow","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull isp-layout--overflow">
 	<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|70","left":"var:preset|spacing|70"}}}} -->
-	<div class="wp-block-columns"><!-- wp:column {"className":"isp-layout\u002d\u002doverflow__content-column"} -->
+	<div class="wp-block-columns"><!-- wp:column {"className":"isp-layout--overflow__content-column"} -->
 		<div class="wp-block-column isp-layout--overflow__content-column">
-			<!-- wp:group {"className":"isp-layout\u002d\u002doverflow__content","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"isp-layout--overflow__content","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group isp-layout--overflow__content">
 				<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--70)">
@@ -161,9 +161,9 @@
 		</div>
 		<!-- /wp:column -->
 
-		<!-- wp:column {"className":"isp-layout\u002d\u002doverflow__image-column"} -->
+		<!-- wp:column {"className":"isp-layout--overflow__image-column"} -->
 		<div class="wp-block-column isp-layout--overflow__image-column">
-			<!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"isp-layout\u002d\u002doverflow__image"} -->
+			<!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"isp-layout--overflow__image"} -->
 			<figure class="wp-block-image size-large isp-layout--overflow__image"><img
 					src="/wp-content/themes/ubc-isp/patterns/images/cta-1.jpeg" alt="" /></figure>
 			<!-- /wp:image -->

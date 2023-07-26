@@ -45,9 +45,9 @@
 									src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png" alt="" /></figure>
 							<!-- /wp:image -->
 
-							<!-- wp:group {"className":"isp-story-card\u002d\u002ddetails","layout":{"type":"constrained"}} -->
+							<!-- wp:group {"className":"isp-story-card--details","layout":{"type":"constrained"}} -->
 							<div class="wp-block-group isp-story-card--details">
-								<!-- wp:group {"className":"isp-story-card\u002d\u002ddate","layout":{"type":"constrained"}} -->
+								<!-- wp:group {"className":"isp-story-card--date","layout":{"type":"constrained"}} -->
 								<div class="wp-block-group isp-story-card--date">
 									<!-- wp:heading {"level":6,"style":{"typography":{"fontSize":"12px","textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"0.1em"}},"textColor":"ubc-grey"} -->
 									<h6 class="wp-block-heading has-ubc-grey-color has-text-color"
@@ -64,7 +64,7 @@
 									receive UBC funding to help advance rights of Indigenous peoples</h3>
 								<!-- /wp:heading -->
 
-								<!-- wp:buttons {"className":"isp-story-card\u002d\u002dlink","layout":{"type":"flex","orientation":"horizontal"}} -->
+								<!-- wp:buttons {"className":"isp-story-card--link","layout":{"type":"flex","orientation":"horizontal"}} -->
 								<div class="wp-block-buttons isp-story-card--link">
 									<!-- wp:button {"className":"is-style-tertiary button-tertiary"} -->
 									<div class="wp-block-button is-style-tertiary button-tertiary"><a
@@ -92,9 +92,9 @@
 								</figure>
 								<!-- /wp:image -->
 
-								<!-- wp:group {"className":"isp-story-card\u002d\u002ddetails","layout":{"type":"constrained"}} -->
+								<!-- wp:group {"className":"isp-story-card--details","layout":{"type":"constrained"}} -->
 								<div class="wp-block-group isp-story-card--details">
-									<!-- wp:group {"className":"isp-story-card\u002d\u002ddate","layout":{"type":"constrained"}} -->
+									<!-- wp:group {"className":"isp-story-card--date","layout":{"type":"constrained"}} -->
 									<div class="wp-block-group isp-story-card--date">
 										<!-- wp:heading {"level":6,"style":{"typography":{"fontSize":"12px","textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"0.1em"}},"textColor":"ubc-grey","className":"isp-story-card__tag"} -->
 										<h6 class="wp-block-heading isp-story-card__tag has-ubc-grey-color has-text-color"
@@ -141,9 +141,9 @@
 									src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png" alt="" /></figure>
 							<!-- /wp:image -->
 
-							<!-- wp:group {"className":"isp-story-card\u002d\u002ddetails","layout":{"type":"constrained"}} -->
+							<!-- wp:group {"className":"isp-story-card--details","layout":{"type":"constrained"}} -->
 							<div class="wp-block-group isp-story-card--details">
-								<!-- wp:group {"className":"isp-story-card\u002d\u002ddate","layout":{"type":"constrained"}} -->
+								<!-- wp:group {"className":"isp-story-card--date","layout":{"type":"constrained"}} -->
 								<div class="wp-block-group isp-story-card--date">
 									<!-- wp:heading {"level":6,"style":{"typography":{"fontSize":"12px","textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"0.1em"}},"textColor":"ubc-grey"} -->
 									<h6 class="wp-block-heading has-ubc-grey-color has-text-color"
@@ -160,7 +160,7 @@
 									receive UBC funding to help advance rights of Indigenous peoples</h3>
 								<!-- /wp:heading -->
 
-								<!-- wp:buttons {"className":"isp-story-card\u002d\u002dlink","layout":{"type":"flex","orientation":"horizontal"}} -->
+								<!-- wp:buttons {"className":"isp-story-card--link","layout":{"type":"flex","orientation":"horizontal"}} -->
 								<div class="wp-block-buttons isp-story-card--link">
 									<!-- wp:button {"className":"is-style-tertiary button-tertiary"} -->
 									<div class="wp-block-button is-style-tertiary button-tertiary"><a

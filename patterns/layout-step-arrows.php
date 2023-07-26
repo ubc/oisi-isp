@@ -49,7 +49,7 @@
 				<div class="wp-block-group isp-layout-steps-to-action__body"><!-- wp:columns -->
 					<div class="wp-block-columns"><!-- wp:column -->
 						<div class="wp-block-column">
-							<!-- wp:group {"className":"isp-card\u002d\u002dstep isp-card\u002d\u002dstep-arrow","layout":{"type":"constrained"}} -->
+							<!-- wp:group {"className":"isp-card--step isp-card--step-arrow","layout":{"type":"constrained"}} -->
 							<div class="wp-block-group isp-card--step isp-card--step-arrow"><!-- wp:html -->
 								<a class="" href="http://www.google.ca">
 									<!-- /wp:html -->
@@ -75,7 +75,7 @@
 									</div>
 									<!-- /wp:group -->
 
-									<!-- wp:heading {"textAlign":"left","level":6,"className":"button-tertiary isp-icon-bucket\u002d\u002dbutton","fontSize":"small"} -->
+									<!-- wp:heading {"textAlign":"left","level":6,"className":"button-tertiary isp-icon-bucket--button","fontSize":"small"} -->
 									<h6
 										class="wp-block-heading has-text-align-left button-tertiary isp-icon-bucket--button has-small-font-size">
 										Read the plan</h6>
@@ -91,7 +91,7 @@
 
 						<!-- wp:column -->
 						<div class="wp-block-column">
-							<!-- wp:group {"className":"isp-card\u002d\u002dstep isp-card\u002d\u002dstep-arrow","layout":{"type":"constrained"}} -->
+							<!-- wp:group {"className":"isp-card--step isp-card--step-arrow","layout":{"type":"constrained"}} -->
 							<div class="wp-block-group isp-card--step isp-card--step-arrow"><!-- wp:html -->
 								<a class="" href="http://www.google.ca">
 									<!-- /wp:html -->
@@ -117,7 +117,7 @@
 									</div>
 									<!-- /wp:group -->
 
-									<!-- wp:heading {"textAlign":"left","level":6,"className":"button-tertiary isp-icon-bucket\u002d\u002dbutton","fontSize":"small"} -->
+									<!-- wp:heading {"textAlign":"left","level":6,"className":"button-tertiary isp-icon-bucket--button","fontSize":"small"} -->
 									<h6
 										class="wp-block-heading has-text-align-left button-tertiary isp-icon-bucket--button has-small-font-size">
 										Self-Assessment Tool</h6>
@@ -133,7 +133,7 @@
 
 						<!-- wp:column -->
 						<div class="wp-block-column">
-							<!-- wp:group {"className":"isp-card\u002d\u002dstep","layout":{"type":"constrained"}} -->
+							<!-- wp:group {"className":"isp-card--step","layout":{"type":"constrained"}} -->
 							<div class="wp-block-group isp-card--step"><!-- wp:html -->
 								<a class="" href="http://www.google.ca">
 									<!-- /wp:html -->
@@ -159,7 +159,7 @@
 									</div>
 									<!-- /wp:group -->
 
-									<!-- wp:heading {"textAlign":"left","level":6,"className":"button-tertiary isp-icon-bucket\u002d\u002dbutton","fontSize":"small"} -->
+									<!-- wp:heading {"textAlign":"left","level":6,"className":"button-tertiary isp-icon-bucket--button","fontSize":"small"} -->
 									<h6
 										class="wp-block-heading has-text-align-left button-tertiary isp-icon-bucket--button has-small-font-size">
 										Intent to Action Tool</h6>

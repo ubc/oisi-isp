@@ -21,7 +21,6 @@
 				<div class="wp-block-group isp-cta-g has-ubc-blue-background-color has-background"><!-- wp:html -->
 					<a href="">
 						<!-- /wp:html -->
-
 						<!-- wp:cover {"useFeaturedImage":true,"dimRatio":70,"overlayColor":"ubc-blue"} -->
 						<div class="wp-block-cover"><span aria-hidden="true"
 								class="wp-block-cover__background has-ubc-blue-background-color has-background-dim-70 has-background-dim"></span>

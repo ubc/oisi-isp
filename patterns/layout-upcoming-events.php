@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Upcoming Events
- * Slug: meetgoat/layouts-upcoming-events
+ * Slug: meetgoat/layout-upcoming-events
  * Categories: ubc-layouts
  * Viewport Width: 1280
  * Block Types: core/post-content
@@ -12,259 +12,319 @@
 
 ?>
 
+
 <!-- wp:group {"backgroundColor":"isp-sand_2","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-isp-sand-2-background-color has-background"><!-- wp:spacer {"height":"93px"} -->
-	<div style="height:93px" aria-hidden="true" class="wp-block-spacer"></div>
-	<!-- /wp:spacer -->
+<div class="wp-block-group has-isp-sand-2-background-color has-background"><!-- wp:columns -->
+	<div class="wp-block-columns"><!-- wp:column -->
+		<div class="wp-block-column"><!-- wp:group {"className":"isp-upcoming-events","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group isp-upcoming-events"><!-- wp:group {"backgroundColor":"isp-sand_1","className":"isp-upcoming-events__inner","layout":{"type":"constrained"}} -->
+				<div class="wp-block-group isp-upcoming-events__inner has-isp-sand-1-background-color has-background"><!-- wp:group {"className":"isp-upcoming-events__header","layout":{"type":"constrained"}} -->
+					<div class="wp-block-group isp-upcoming-events__header"><!-- wp:heading {"style":{"typography":{"textTransform":"uppercase"}},"textColor":"isp-calcite","className":"is-style-sub-heading","fontSize":"small"} -->
+						<h2 class="wp-block-heading is-style-sub-heading has-isp-calcite-color has-text-color has-small-font-size" style="text-transform:uppercase">Upcoming</h2>
+						<!-- /wp:heading -->
 
-	<!-- wp:columns -->
-	<div class="wp-block-columns"><!-- wp:column {"width":"25%"} -->
-		<div class="wp-block-column" style="flex-basis:25%">
-			<!-- wp:heading {"textColor":"isp-calcite","fontSize":"large"} -->
-			<h2 class="wp-block-heading has-isp-calcite-color has-text-color has-large-font-size">Key Dates</h2>
-			<!-- /wp:heading -->
+						<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+						<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+							<h3 class="wp-block-heading has-large-font-size">Information Sessions <img class="wp-image-463" style="width: 24px;" src="http://ubcisp.local/wp-content/uploads/2023/06/information.png" alt=""></h3>
+							<!-- /wp:heading -->
 
-			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size">Lorem ipsum dolor sit amet <br>consectetur. Nunc semper ultrices <br>amet mus
-				lobortis suspendisse amet.</p>
-			<!-- /wp:paragraph -->
+							<!-- wp:image {"sizeSlug":"large"} -->
+							<figure class="wp-block-image size-large"><img src="/wp-content/themes/ubc-isp/placeholder/information.png" alt="" /></figure>
+							<!-- /wp:image -->
+						</div>
+						<!-- /wp:group -->
+					</div>
+					<!-- /wp:group -->
 
-			<!-- wp:spacer {"height":"8px","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-			<div style="margin-top:0;margin-bottom:0;height:8px" aria-hidden="true" class="wp-block-spacer"></div>
-			<!-- /wp:spacer -->
+					<!-- wp:group {"className":"isp-upcoming-events__list","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+					<div class="wp-block-group isp-upcoming-events__list"><!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__single","layout":{"type":"constrained"}} -->
+						<div class="wp-block-group isp-upcoming-events__single has-ubc-white-background-color has-background"><!-- wp:html -->
+							<a href="http://google.ca">
+								<!-- /wp:html -->
 
-			<!-- wp:buttons -->
-			<div class="wp-block-buttons"><!-- wp:button -->
-				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Learn More</a></div>
-				<!-- /wp:button -->
+								<!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__event","layout":{"type":"constrained"}} -->
+								<div class="wp-block-group isp-upcoming-events__event has-ubc-white-background-color has-background"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
+									<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":"54px"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:54px"><!-- wp:group {"backgroundColor":"isp-sand_2","className":"isp-upcoming-events__date","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__date has-isp-sand-2-background-color has-background"><!-- wp:heading {"textAlign":"center","style":{"typography":{"textTransform":"uppercase"}},"className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size" style="text-transform:uppercase">Sep</h2>
+												<!-- /wp:heading -->
+
+												<!-- wp:heading {"textAlign":"center","className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size">03</h2>
+												<!-- /wp:heading -->
+											</div>
+											<!-- /wp:group -->
+										</div>
+										<!-- /wp:column -->
+
+										<!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:group {"className":"isp-upcoming-events__details","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__details"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","fontSize":"16px"}},"textColor":"isp-bistre"} -->
+												<p class="has-isp-bistre-color has-text-color" style="font-size:16px;font-style:normal;font-weight:500">From 3:30 p.m. to 4:30 p.m.</p>
+												<!-- /wp:paragraph -->
+											</div>
+											<!-- /wp:group -->
+										</div>
+										<!-- /wp:column -->
+									</div>
+									<!-- /wp:columns -->
+								</div>
+								<!-- /wp:group -->
+
+								<!-- wp:html -->
+							</a>
+							<!-- /wp:html -->
+						</div>
+						<!-- /wp:group -->
+
+						<!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__single","layout":{"type":"constrained"}} -->
+						<div class="wp-block-group isp-upcoming-events__single has-ubc-white-background-color has-background"><!-- wp:html -->
+							<a href="http://google.ca">
+								<!-- /wp:html -->
+
+								<!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__event","layout":{"type":"constrained"}} -->
+								<div class="wp-block-group isp-upcoming-events__event has-ubc-white-background-color has-background"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
+									<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":"54px"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:54px"><!-- wp:group {"backgroundColor":"isp-sand_2","className":"isp-upcoming-events__date","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__date has-isp-sand-2-background-color has-background"><!-- wp:heading {"textAlign":"center","style":{"typography":{"textTransform":"uppercase"}},"className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size" style="text-transform:uppercase">Sep</h2>
+												<!-- /wp:heading -->
+
+												<!-- wp:heading {"textAlign":"center","className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size">03</h2>
+												<!-- /wp:heading -->
+											</div>
+											<!-- /wp:group -->
+										</div>
+										<!-- /wp:column -->
+
+										<!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:group {"className":"isp-upcoming-events__details","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__details"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","fontSize":"16px"}},"textColor":"isp-bistre"} -->
+												<p class="has-isp-bistre-color has-text-color" style="font-size:16px;font-style:normal;font-weight:500">From 3:30 p.m. to 4:30 p.m.</p>
+												<!-- /wp:paragraph -->
+											</div>
+											<!-- /wp:group -->
+										</div>
+										<!-- /wp:column -->
+									</div>
+									<!-- /wp:columns -->
+								</div>
+								<!-- /wp:group -->
+
+								<!-- wp:html -->
+							</a>
+							<!-- /wp:html -->
+						</div>
+						<!-- /wp:group -->
+
+						<!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__single","layout":{"type":"constrained"}} -->
+						<div class="wp-block-group isp-upcoming-events__single has-ubc-white-background-color has-background"><!-- wp:html -->
+							<a href="http://google.ca">
+								<!-- /wp:html -->
+
+								<!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__event","layout":{"type":"constrained"}} -->
+								<div class="wp-block-group isp-upcoming-events__event has-ubc-white-background-color has-background"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
+									<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":"54px"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:54px"><!-- wp:group {"backgroundColor":"isp-sand_2","className":"isp-upcoming-events__date","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__date has-isp-sand-2-background-color has-background"><!-- wp:heading {"textAlign":"center","style":{"typography":{"textTransform":"uppercase"}},"className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size" style="text-transform:uppercase">Sep</h2>
+												<!-- /wp:heading -->
+
+												<!-- wp:heading {"textAlign":"center","className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size">03</h2>
+												<!-- /wp:heading -->
+											</div>
+											<!-- /wp:group -->
+										</div>
+										<!-- /wp:column -->
+
+										<!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:group {"className":"isp-upcoming-events__details","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__details"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","fontSize":"16px"}},"textColor":"isp-bistre"} -->
+												<p class="has-isp-bistre-color has-text-color" style="font-size:16px;font-style:normal;font-weight:500">From 3:30 p.m. to 4:30 p.m.</p>
+												<!-- /wp:paragraph -->
+											</div>
+											<!-- /wp:group -->
+										</div>
+										<!-- /wp:column -->
+									</div>
+									<!-- /wp:columns -->
+								</div>
+								<!-- /wp:group -->
+
+								<!-- wp:html -->
+							</a>
+							<!-- /wp:html -->
+						</div>
+						<!-- /wp:group -->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
 			</div>
-			<!-- /wp:buttons -->
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:column -->
 
-		<!-- wp:column {"width":"75%"} -->
-		<div class="wp-block-column" style="flex-basis:75%">
-			<!-- wp:group {"className":"isp-key-date isp-key-date-alt","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group isp-key-date isp-key-date-alt">
-				<!-- wp:group {"backgroundColor":"isp-sand_2","className":"isp-key-date__inner","layout":{"type":"constrained"}} -->
-				<div class="wp-block-group isp-key-date__inner has-isp-sand-2-background-color has-background">
-					<!-- wp:separator -->
-					<hr class="wp-block-separator has-alpha-channel-opacity" />
-					<!-- /wp:separator -->
+		<!-- wp:column -->
+		<div class="wp-block-column"><!-- wp:group {"className":"isp-upcoming-events","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group isp-upcoming-events"><!-- wp:group {"backgroundColor":"isp-sand_1","className":"isp-upcoming-events__inner","layout":{"type":"constrained"}} -->
+				<div class="wp-block-group isp-upcoming-events__inner has-isp-sand-1-background-color has-background"><!-- wp:group {"className":"isp-upcoming-events__header","layout":{"type":"constrained"}} -->
+					<div class="wp-block-group isp-upcoming-events__header"><!-- wp:heading {"style":{"typography":{"textTransform":"uppercase"}},"textColor":"isp-calcite","className":"is-style-sub-heading","fontSize":"small"} -->
+						<h2 class="wp-block-heading is-style-sub-heading has-isp-calcite-color has-text-color has-small-font-size" style="text-transform:uppercase">Upcoming</h2>
+						<!-- /wp:heading -->
 
-					<!-- wp:html -->
-					<a href="http://google.ca">
-						<!-- /wp:html -->
+						<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+						<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"large"} -->
+							<h3 class="wp-block-heading has-large-font-size">Consultation Sessions</h3>
+							<!-- /wp:heading -->
 
-						<!-- wp:columns -->
-						<div class="wp-block-columns">
-							<!-- wp:column {"width":"135px","className":"isp-key-date__date-column"} -->
-							<div class="wp-block-column isp-key-date__date-column" style="flex-basis:135px">
-								<!-- wp:group {"className":"isp-key-date__date","layout":{"type":"constrained","justifyContent":"left"}} -->
-								<div class="wp-block-group isp-key-date__date">
-									<!-- wp:heading {"level":5,"style":{"typography":{"textTransform":"uppercase","fontSize":"12px"},"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}}},"textColor":"isp-calcite","className":"is-style-sub-heading"} -->
-									<h5 class="wp-block-heading is-style-sub-heading has-isp-calcite-color has-text-color"
-										style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-size:12px;text-transform:uppercase">
-										January <br>2023</h5>
-									<!-- /wp:heading -->
-								</div>
-								<!-- /wp:group -->
-							</div>
-							<!-- /wp:column -->
+							<!-- wp:image {"sizeSlug":"large"} -->
+							<figure class="wp-block-image size-large"><img src="/wp-content/themes/ubc-isp/placeholder/consultation.png" alt="" /></figure>
+							<!-- /wp:image -->
+						</div>
+						<!-- /wp:group -->
+					</div>
+					<!-- /wp:group -->
 
-							<!-- wp:column {"verticalAlignment":"center","width":""} -->
-							<div class="wp-block-column is-vertically-aligned-center">
-								<!-- wp:group {"className":"isp-key-date__details","layout":{"type":"constrained"}} -->
-								<div class="wp-block-group isp-key-date__details">
-									<!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
-									<div
-										class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile">
-										<!-- wp:column {"verticalAlignment":"center","width":"24px","className":"isp-mobile-only"} -->
-										<div class="wp-block-column is-vertically-aligned-center isp-mobile-only"
-											style="flex-basis:24px">
-											<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-											<figure class="wp-block-image size-large"><img
-													src="/wp-content/themes/ubc-isp/patterns/images/information.png"
-													alt="" /></figure>
-											<!-- /wp:image -->
+					<!-- wp:group {"className":"isp-upcoming-events__list","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+					<div class="wp-block-group isp-upcoming-events__list"><!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__single","layout":{"type":"constrained"}} -->
+						<div class="wp-block-group isp-upcoming-events__single has-ubc-white-background-color has-background"><!-- wp:html -->
+							<a href="http://google.ca">
+								<!-- /wp:html -->
+
+								<!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__event","layout":{"type":"constrained"}} -->
+								<div class="wp-block-group isp-upcoming-events__event has-ubc-white-background-color has-background"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
+									<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":"54px"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:54px"><!-- wp:group {"backgroundColor":"isp-sand_2","className":"isp-upcoming-events__date","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__date has-isp-sand-2-background-color has-background"><!-- wp:heading {"textAlign":"center","style":{"typography":{"textTransform":"uppercase"}},"className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size" style="text-transform:uppercase">Sep</h2>
+												<!-- /wp:heading -->
+
+												<!-- wp:heading {"textAlign":"center","className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size">03</h2>
+												<!-- /wp:heading -->
+											</div>
+											<!-- /wp:group -->
 										</div>
 										<!-- /wp:column -->
 
-										<!-- wp:column {"verticalAlignment":"center","width":""} -->
-										<div class="wp-block-column is-vertically-aligned-center">
-											<!-- wp:heading {"level":5,"className":"isp-upcoming-event__title","fontSize":"small"} -->
-											<h5 class="wp-block-heading isp-upcoming-event__title has-small-font-size">
-												Letter of Intent (LOI) deadline for streams 1 and 2.</h5>
-											<!-- /wp:heading -->
+										<!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:group {"className":"isp-upcoming-events__details","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__details"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","fontSize":"16px"}},"textColor":"isp-bistre"} -->
+												<p class="has-isp-bistre-color has-text-color" style="font-size:16px;font-style:normal;font-weight:500">From 3:30 p.m. to 4:30 p.m.</p>
+												<!-- /wp:paragraph -->
+											</div>
+											<!-- /wp:group -->
 										</div>
 										<!-- /wp:column -->
 									</div>
 									<!-- /wp:columns -->
 								</div>
 								<!-- /wp:group -->
-							</div>
-							<!-- /wp:column -->
+
+								<!-- wp:html -->
+							</a>
+							<!-- /wp:html -->
 						</div>
-						<!-- /wp:columns -->
+						<!-- /wp:group -->
 
-						<!-- wp:html -->
-					</a>
-					<!-- /wp:html -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:group -->
+						<!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__single","layout":{"type":"constrained"}} -->
+						<div class="wp-block-group isp-upcoming-events__single has-ubc-white-background-color has-background"><!-- wp:html -->
+							<a href="http://google.ca">
+								<!-- /wp:html -->
 
-			<!-- wp:group {"className":"isp-key-date isp-key-date-alt","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group isp-key-date isp-key-date-alt">
-				<!-- wp:group {"backgroundColor":"isp-sand_2","className":"isp-key-date__inner","layout":{"type":"constrained"}} -->
-				<div class="wp-block-group isp-key-date__inner has-isp-sand-2-background-color has-background">
-					<!-- wp:separator -->
-					<hr class="wp-block-separator has-alpha-channel-opacity" />
-					<!-- /wp:separator -->
+								<!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__event","layout":{"type":"constrained"}} -->
+								<div class="wp-block-group isp-upcoming-events__event has-ubc-white-background-color has-background"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
+									<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":"54px"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:54px"><!-- wp:group {"backgroundColor":"isp-sand_2","className":"isp-upcoming-events__date","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__date has-isp-sand-2-background-color has-background"><!-- wp:heading {"textAlign":"center","style":{"typography":{"textTransform":"uppercase"}},"className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size" style="text-transform:uppercase">Sep</h2>
+												<!-- /wp:heading -->
 
-					<!-- wp:html -->
-					<a href="http://google.ca">
-						<!-- /wp:html -->
-
-						<!-- wp:columns -->
-						<div class="wp-block-columns">
-							<!-- wp:column {"width":"135px","className":"isp-key-date__date-column"} -->
-							<div class="wp-block-column isp-key-date__date-column" style="flex-basis:135px">
-								<!-- wp:group {"className":"isp-key-date__date","layout":{"type":"constrained","justifyContent":"left"}} -->
-								<div class="wp-block-group isp-key-date__date">
-									<!-- wp:heading {"textAlign":"left","level":5,"style":{"typography":{"textTransform":"uppercase","fontSize":"12px"}},"textColor":"isp-calcite","className":"is-style-sub-heading"} -->
-									<h5 class="wp-block-heading has-text-align-left is-style-sub-heading has-isp-calcite-color has-text-color"
-										style="font-size:12px;text-transform:uppercase">January <br>2023</h5>
-									<!-- /wp:heading -->
-								</div>
-								<!-- /wp:group -->
-							</div>
-							<!-- /wp:column -->
-
-							<!-- wp:column {"verticalAlignment":"center","width":""} -->
-							<div class="wp-block-column is-vertically-aligned-center">
-								<!-- wp:group {"className":"isp-key-date__details","layout":{"type":"constrained"}} -->
-								<div class="wp-block-group isp-key-date__details">
-									<!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
-									<div
-										class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile">
-										<!-- wp:column {"verticalAlignment":"center","width":"24px","className":"isp-mobile-only"} -->
-										<div class="wp-block-column is-vertically-aligned-center isp-mobile-only"
-											style="flex-basis:24px">
-											<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-											<figure class="wp-block-image size-large"><img
-													src="/wp-content/themes/ubc-isp/patterns/images/information.png"
-													alt="" /></figure>
-											<!-- /wp:image -->
+												<!-- wp:heading {"textAlign":"center","className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size">03</h2>
+												<!-- /wp:heading -->
+											</div>
+											<!-- /wp:group -->
 										</div>
 										<!-- /wp:column -->
 
-										<!-- wp:column {"verticalAlignment":"center","width":""} -->
-										<div class="wp-block-column is-vertically-aligned-center">
-											<!-- wp:heading {"level":5,"className":"isp-upcoming-event__title","fontSize":"small"} -->
-											<h5 class="wp-block-heading isp-upcoming-event__title has-small-font-size">
-												Letter of Intent (LOI) deadline for streams 1 and 2.</h5>
-											<!-- /wp:heading -->
+										<!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:group {"className":"isp-upcoming-events__details","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__details"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","fontSize":"16px"}},"textColor":"isp-bistre"} -->
+												<p class="has-isp-bistre-color has-text-color" style="font-size:16px;font-style:normal;font-weight:500">From 3:30 p.m. to 4:30 p.m.</p>
+												<!-- /wp:paragraph -->
+											</div>
+											<!-- /wp:group -->
 										</div>
 										<!-- /wp:column -->
 									</div>
 									<!-- /wp:columns -->
 								</div>
 								<!-- /wp:group -->
-							</div>
-							<!-- /wp:column -->
+
+								<!-- wp:html -->
+							</a>
+							<!-- /wp:html -->
 						</div>
-						<!-- /wp:columns -->
+						<!-- /wp:group -->
 
-						<!-- wp:html -->
-					</a>
-					<!-- /wp:html -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:group -->
+						<!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__single","layout":{"type":"constrained"}} -->
+						<div class="wp-block-group isp-upcoming-events__single has-ubc-white-background-color has-background"><!-- wp:html -->
+							<a href="http://google.ca">
+								<!-- /wp:html -->
 
-			<!-- wp:group {"className":"isp-key-date isp-key-date-alt","layout":{"type":"constrained"}} -->
-			<div class="wp-block-group isp-key-date isp-key-date-alt">
-				<!-- wp:group {"backgroundColor":"isp-sand_2","className":"isp-key-date__inner","layout":{"type":"constrained"}} -->
-				<div class="wp-block-group isp-key-date__inner has-isp-sand-2-background-color has-background">
-					<!-- wp:separator -->
-					<hr class="wp-block-separator has-alpha-channel-opacity" />
-					<!-- /wp:separator -->
+								<!-- wp:group {"backgroundColor":"ubc-white","className":"isp-upcoming-events__event","layout":{"type":"constrained"}} -->
+								<div class="wp-block-group isp-upcoming-events__event has-ubc-white-background-color has-background"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
+									<div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":"54px"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:54px"><!-- wp:group {"backgroundColor":"isp-sand_2","className":"isp-upcoming-events__date","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__date has-isp-sand-2-background-color has-background"><!-- wp:heading {"textAlign":"center","style":{"typography":{"textTransform":"uppercase"}},"className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size" style="text-transform:uppercase">Sep</h2>
+												<!-- /wp:heading -->
 
-					<!-- wp:html -->
-					<a href="http://google.ca">
-						<!-- /wp:html -->
-
-						<!-- wp:columns -->
-						<div class="wp-block-columns">
-							<!-- wp:column {"width":"135px","className":"isp-key-date__date-column"} -->
-							<div class="wp-block-column isp-key-date__date-column" style="flex-basis:135px">
-								<!-- wp:group {"className":"isp-key-date__date","layout":{"type":"constrained","justifyContent":"left"}} -->
-								<div class="wp-block-group isp-key-date__date">
-									<!-- wp:heading {"textAlign":"left","level":5,"style":{"typography":{"textTransform":"uppercase","fontSize":"12px"}},"textColor":"isp-calcite","className":"is-style-sub-heading"} -->
-									<h5 class="wp-block-heading has-text-align-left is-style-sub-heading has-isp-calcite-color has-text-color"
-										style="font-size:12px;text-transform:uppercase">January <br>2023</h5>
-									<!-- /wp:heading -->
-								</div>
-								<!-- /wp:group -->
-							</div>
-							<!-- /wp:column -->
-
-							<!-- wp:column {"verticalAlignment":"center","width":""} -->
-							<div class="wp-block-column is-vertically-aligned-center">
-								<!-- wp:group {"className":"isp-key-date__details","layout":{"type":"constrained"}} -->
-								<div class="wp-block-group isp-key-date__details">
-									<!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
-									<div
-										class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile">
-										<!-- wp:column {"verticalAlignment":"center","width":"24px","className":"isp-mobile-only"} -->
-										<div class="wp-block-column is-vertically-aligned-center isp-mobile-only"
-											style="flex-basis:24px">
-											<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-											<figure class="wp-block-image size-large"><img
-													src="/wp-content/themes/ubc-isp/patterns/images/information.png"
-													alt="" /></figure>
-											<!-- /wp:image -->
+												<!-- wp:heading {"textAlign":"center","className":"is-style-sub-heading","fontSize":"small"} -->
+												<h2 class="wp-block-heading has-text-align-center is-style-sub-heading has-small-font-size">03</h2>
+												<!-- /wp:heading -->
+											</div>
+											<!-- /wp:group -->
 										</div>
 										<!-- /wp:column -->
 
-										<!-- wp:column {"verticalAlignment":"center","width":""} -->
-										<div class="wp-block-column is-vertically-aligned-center">
-											<!-- wp:heading {"level":5,"className":"isp-upcoming-event__title","fontSize":"small"} -->
-											<h5 class="wp-block-heading isp-upcoming-event__title has-small-font-size">
-												Letter of Intent (LOI) deadline for streams 1 and 2.</h5>
-											<!-- /wp:heading -->
+										<!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
+										<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:group {"className":"isp-upcoming-events__details","layout":{"type":"constrained"}} -->
+											<div class="wp-block-group isp-upcoming-events__details"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500","fontSize":"16px"}},"textColor":"isp-bistre"} -->
+												<p class="has-isp-bistre-color has-text-color" style="font-size:16px;font-style:normal;font-weight:500">From 3:30 p.m. to 4:30 p.m.</p>
+												<!-- /wp:paragraph -->
+											</div>
+											<!-- /wp:group -->
 										</div>
 										<!-- /wp:column -->
 									</div>
 									<!-- /wp:columns -->
 								</div>
 								<!-- /wp:group -->
-							</div>
-							<!-- /wp:column -->
-						</div>
-						<!-- /wp:columns -->
 
-						<!-- wp:html -->
-					</a>
-					<!-- /wp:html -->
+								<!-- wp:html -->
+							</a>
+							<!-- /wp:html -->
+						</div>
+						<!-- /wp:group -->
+					</div>
+					<!-- /wp:group -->
 				</div>
 				<!-- /wp:group -->
 			</div>
 			<!-- /wp:group -->
-
-			<!-- wp:separator {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-			<hr class="wp-block-separator has-alpha-channel-opacity" style="margin-top:0;margin-bottom:0" />
-			<!-- /wp:separator -->
 		</div>
 		<!-- /wp:column -->
 	</div>
 	<!-- /wp:columns -->
 
-	<!-- wp:spacer {"height":"90px"} -->
-	<div style="height:90px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- wp:spacer -->
+	<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 </div>
 <!-- /wp:group -->

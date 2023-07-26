@@ -39,7 +39,7 @@
 						</div>
 						<!-- /wp:group -->
 
-						<!-- wp:separator {"className":"is-style-squiggle-brown\u002d\u002dsmall"} -->
+						<!-- wp:separator {"className":"is-style-squiggle-brown--small"} -->
 						<hr class="wp-block-separator has-alpha-channel-opacity is-style-squiggle-brown--small" />
 						<!-- /wp:separator -->
 

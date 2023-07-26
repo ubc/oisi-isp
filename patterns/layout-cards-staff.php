@@ -25,7 +25,7 @@
 
 		<!-- wp:group {"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group">
-			<!-- wp:group {"className":"isp-team isp-card\u002d\u002dteam","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"isp-team isp-card--team","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group isp-team isp-card--team"><!-- wp:columns {"className":"isp-team__inner"} -->
 				<div class="wp-block-columns isp-team__inner"><!-- wp:column -->
 					<div class="wp-block-column">
@@ -69,7 +69,7 @@
 															the President on Indigenous Affairs</p>
 														<!-- /wp:paragraph -->
 
-														<!-- wp:separator {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"className":"is-style-squiggle-brown\u002d\u002dsmall"} -->
+														<!-- wp:separator {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"className":"is-style-squiggle-brown--small"} -->
 														<hr class="wp-block-separator alignfull has-alpha-channel-opacity is-style-squiggle-brown--small"
 															style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)" />
 														<!-- /wp:separator -->
@@ -185,7 +185,7 @@
 			</div>
 			<!-- /wp:group -->
 
-			<!-- wp:group {"className":"isp-team isp-card\u002d\u002dteam","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"isp-team isp-card--team","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group isp-team isp-card--team"><!-- wp:columns {"className":"isp-team__inner"} -->
 				<div class="wp-block-columns isp-team__inner"><!-- wp:column -->
 					<div class="wp-block-column">
@@ -229,7 +229,7 @@
 															the President on Indigenous Affairs</p>
 														<!-- /wp:paragraph -->
 
-														<!-- wp:separator {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"className":"is-style-squiggle-brown\u002d\u002dsmall"} -->
+														<!-- wp:separator {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"className":"is-style-squiggle-brown--small"} -->
 														<hr class="wp-block-separator alignfull has-alpha-channel-opacity is-style-squiggle-brown--small"
 															style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)" />
 														<!-- /wp:separator -->
@@ -345,7 +345,7 @@
 			</div>
 			<!-- /wp:group -->
 
-			<!-- wp:group {"className":"isp-team isp-card\u002d\u002dteam","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"isp-team isp-card--team","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group isp-team isp-card--team"><!-- wp:columns {"className":"isp-team__inner"} -->
 				<div class="wp-block-columns isp-team__inner"><!-- wp:column -->
 					<div class="wp-block-column">
@@ -389,7 +389,7 @@
 															the President on Indigenous Affairs</p>
 														<!-- /wp:paragraph -->
 
-														<!-- wp:separator {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"className":"is-style-squiggle-brown\u002d\u002dsmall"} -->
+														<!-- wp:separator {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"className":"is-style-squiggle-brown--small"} -->
 														<hr class="wp-block-separator alignfull has-alpha-channel-opacity is-style-squiggle-brown--small"
 															style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)" />
 														<!-- /wp:separator -->
@@ -505,7 +505,7 @@
 			</div>
 			<!-- /wp:group -->
 
-			<!-- wp:group {"className":"isp-team isp-card\u002d\u002dteam","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"isp-team isp-card--team","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group isp-team isp-card--team"><!-- wp:columns {"className":"isp-team__inner"} -->
 				<div class="wp-block-columns isp-team__inner"><!-- wp:column -->
 					<div class="wp-block-column">
@@ -549,7 +549,7 @@
 															the President on Indigenous Affairs</p>
 														<!-- /wp:paragraph -->
 
-														<!-- wp:separator {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"className":"is-style-squiggle-brown\u002d\u002dsmall"} -->
+														<!-- wp:separator {"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"className":"is-style-squiggle-brown--small"} -->
 														<hr class="wp-block-separator alignfull has-alpha-channel-opacity is-style-squiggle-brown--small"
 															style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)" />
 														<!-- /wp:separator -->

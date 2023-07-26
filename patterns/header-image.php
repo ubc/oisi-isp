@@ -25,7 +25,7 @@
 
 		<!-- wp:column {"width":"57%"} -->
 		<div class="wp-block-column" style="flex-basis:57%">
-			<!-- wp:group {"className":"isp-header\u002d\u002dcontent","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"isp-header--content","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group isp-header--content">
 				<!-- wp:heading {"level":1,"textColor":"isp-bistre","fontSize":"x-large"} -->
 				<h1 class="wp-block-heading has-isp-bistre-color has-text-color has-x-large-font-size">Explore the
@@ -49,9 +49,9 @@
 
 		<!-- wp:column {"width":""} -->
 		<div class="wp-block-column">
-			<!-- wp:group {"className":"isp-header\u002d\u002dimage","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"isp-header--image","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group isp-header--image">
-				<!-- wp:group {"className":"isp-header\u002d\u002dsquiggle isp-desktop-only","layout":{"type":"constrained"}} -->
+				<!-- wp:group {"className":"isp-header--squiggle isp-desktop-only","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group isp-header--squiggle isp-desktop-only">
 					<!-- wp:separator {"className":"is-style-squiggle-brown"} -->
 					<hr class="wp-block-separator has-alpha-channel-opacity is-style-squiggle-brown" />

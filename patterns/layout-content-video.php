@@ -12,14 +12,14 @@
 
 ?>
 
-<!-- wp:group {"className":"isp-circle\u002d\u002dleft\u002d\u002d1","layout":{"type":"constrained"}} -->
+<!-- wp:group {"className":"isp-circle--left--1","layout":{"type":"constrained"}} -->
 <div class="wp-block-group isp-circle--left--1"><!-- wp:spacer {"height":"45px","className":"isp-desktop-only"} -->
 	<div style="height:45px" aria-hidden="true" class="wp-block-spacer isp-desktop-only"></div>
 	<!-- /wp:spacer -->
 
 	<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"isp-background__content ","layout":{"type":"constrained"}} -->
 	<div class="wp-block-group isp-background__content" style="margin-top:0;margin-bottom:0"><!-- wp:columns -->
-		<div class="wp-block-columns"><!-- wp:column {"width":"35%","className":"isp-mobile-order\u002d\u002d2"} -->
+		<div class="wp-block-columns"><!-- wp:column {"width":"35%","className":"isp-mobile-order--2"} -->
 			<div class="wp-block-column isp-mobile-order--2" style="flex-basis:35%">
 				<!-- wp:spacer {"height":"16px","className":"isp-desktop-only"} -->
 				<div style="height:16px" aria-hidden="true" class="wp-block-spacer isp-desktop-only"></div>
@@ -43,7 +43,7 @@
 				<!-- wp:buttons -->
 				<div class="wp-block-buttons"><!-- wp:button {"className":"isp-desktop-only"} -->
 					<div class="wp-block-button isp-desktop-only"><a class="wp-block-button__link wp-element-button"
-							href="http://ubcisp.local/timline/">See the action plan</a></div>
+							href="#">See the action plan</a></div>
 					<!-- /wp:button -->
 				</div>
 				<!-- /wp:buttons -->
@@ -51,7 +51,7 @@
 				<!-- wp:buttons {"align":"full"} -->
 				<div class="wp-block-buttons alignfull"><!-- wp:button {"width":100,"className":"isp-mobile-only"} -->
 					<div class="wp-block-button has-custom-width wp-block-button__width-100 isp-mobile-only"><a
-							class="wp-block-button__link wp-element-button" href="http://ubcisp.local/timline/">See the
+							class="wp-block-button__link wp-element-button" href="#">See the
 							action plan</a></div>
 					<!-- /wp:button -->
 				</div>
@@ -63,7 +63,7 @@
 			<div class="wp-block-column isp-desktop-only" style="flex-basis:24px"></div>
 			<!-- /wp:column -->
 
-			<!-- wp:column {"width":"","className":"isp-mobile-order\u002d\u002d1"} -->
+			<!-- wp:column {"width":"","className":"isp-mobile-order--1"} -->
 			<div class="wp-block-column isp-mobile-order--1">
 				<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"className":"isp-video","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group isp-video"

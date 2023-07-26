@@ -16,7 +16,7 @@
 <div class="wp-block-group isp-photogrid"><!-- wp:columns -->
 	<div class="wp-block-columns"><!-- wp:column {"width":"75%"} -->
 		<div class="wp-block-column" style="flex-basis:75%">
-			<!-- wp:group {"className":"isp-photogrid\u002d\u002dimages","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"isp-photogrid--images","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group isp-photogrid--images">
 				<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 				<figure class="wp-block-image size-large"><img

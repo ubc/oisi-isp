@@ -12,7 +12,7 @@
 
 ?>
 
-<!-- wp:group {"align":"full","className":"isp-circle\u002d\u002dright-1","layout":{"type":"constrained","contentSize":"1328px"}} -->
+<!-- wp:group {"align":"full","className":"isp-circle--right-1","layout":{"type":"constrained","contentSize":"1328px"}} -->
 <div class="wp-block-group alignfull isp-circle--right-1">
 	<!-- wp:group {"layout":{"type":"constrained","contentSize":"1280px"}} -->
 	<div class="wp-block-group"><!-- wp:columns -->
@@ -37,7 +37,7 @@
 	<div class="wp-block-group"><!-- wp:columns {"className":"wp-buckets"} -->
 		<div class="wp-block-columns wp-buckets"><!-- wp:column -->
 			<div class="wp-block-column">
-				<!-- wp:group {"className":"isp-card\u002d\u002dgoal isp-card","layout":{"type":"constrained"}} -->
+				<!-- wp:group {"className":"isp-card--goal isp-card","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group isp-card--goal isp-card"><!-- wp:html -->
 					<a class="isp-card__link" href="/take-action/the-indigenous-strategic-plan/#goal-1">
 						<!-- /wp:html -->
@@ -72,7 +72,7 @@
 
 			<!-- wp:column -->
 			<div class="wp-block-column">
-				<!-- wp:group {"className":"isp-card\u002d\u002dgoal isp-card","layout":{"type":"constrained"}} -->
+				<!-- wp:group {"className":"isp-card--goal isp-card","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group isp-card--goal isp-card"><!-- wp:html -->
 					<a class="isp-card__link" href="/take-action/the-indigenous-strategic-plan/#goal-2">
 						<!-- /wp:html -->
@@ -106,7 +106,7 @@
 
 			<!-- wp:column -->
 			<div class="wp-block-column">
-				<!-- wp:group {"className":"isp-card\u002d\u002dgoal isp-card","layout":{"type":"constrained"}} -->
+				<!-- wp:group {"className":"isp-card--goal isp-card","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group isp-card--goal isp-card"><!-- wp:html -->
 					<a class="isp-card__link" href="/take-action/the-indigenous-strategic-plan/#goal-3">
 						<!-- /wp:html -->
@@ -141,7 +141,7 @@
 
 			<!-- wp:column -->
 			<div class="wp-block-column">
-				<!-- wp:group {"className":"isp-card\u002d\u002dgoal isp-card","layout":{"type":"constrained"}} -->
+				<!-- wp:group {"className":"isp-card--goal isp-card","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group isp-card--goal isp-card"><!-- wp:html -->
 					<a class="isp-card__link" href="/take-action/the-indigenous-strategic-plan/#goal-4">
 						<!-- /wp:html -->
@@ -179,7 +179,7 @@
 		<!-- wp:columns {"className":"wp-buckets"} -->
 		<div class="wp-block-columns wp-buckets"><!-- wp:column -->
 			<div class="wp-block-column">
-				<!-- wp:group {"className":"isp-card\u002d\u002dgoal isp-card","layout":{"type":"constrained"}} -->
+				<!-- wp:group {"className":"isp-card--goal isp-card","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group isp-card--goal isp-card"><!-- wp:html -->
 					<a class="isp-card__link" href="/take-action/the-indigenous-strategic-plan/#goal-5">
 						<!-- /wp:html -->
@@ -213,7 +213,7 @@
 
 			<!-- wp:column -->
 			<div class="wp-block-column">
-				<!-- wp:group {"className":"isp-card\u002d\u002dgoal isp-card","layout":{"type":"constrained"}} -->
+				<!-- wp:group {"className":"isp-card--goal isp-card","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group isp-card--goal isp-card"><!-- wp:html -->
 					<a class="isp-card__link" href="/take-action/the-indigenous-strategic-plan/#goal-6">
 						<!-- /wp:html -->
@@ -247,7 +247,7 @@
 
 			<!-- wp:column -->
 			<div class="wp-block-column">
-				<!-- wp:group {"className":"isp-card\u002d\u002dgoal isp-card","layout":{"type":"constrained"}} -->
+				<!-- wp:group {"className":"isp-card--goal isp-card","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group isp-card--goal isp-card"><!-- wp:html -->
 					<a class="isp-card__link" href="/take-action/the-indigenous-strategic-plan/#goal-7">
 						<!-- /wp:html -->
@@ -281,7 +281,7 @@
 
 			<!-- wp:column -->
 			<div class="wp-block-column">
-				<!-- wp:group {"className":"isp-card\u002d\u002dgoal isp-card","layout":{"type":"constrained"}} -->
+				<!-- wp:group {"className":"isp-card--goal isp-card","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group isp-card--goal isp-card"><!-- wp:html -->
 					<a class="isp-card__link" href="/take-action/the-indigenous-strategic-plan/#goal-8">
 						<!-- /wp:html -->

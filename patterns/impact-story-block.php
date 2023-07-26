@@ -22,9 +22,9 @@
 				alt="" /></figure>
 		<!-- /wp:image -->
 
-		<!-- wp:group {"className":"isp-story-card\u002d\u002ddetails","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"isp-story-card--details","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group isp-story-card--details">
-			<!-- wp:group {"align":"full","className":"isp-story-card\u002d\u002ddate","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"align":"full","className":"isp-story-card--date","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group alignfull isp-story-card--date">
 				<!-- wp:heading {"level":6,"style":{"typography":{"fontSize":"12px","textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"0.1em"}},"textColor":"ubc-grey","className":"isp-story-card__tag"} -->
 				<h6 class="wp-block-heading isp-story-card__tag has-ubc-grey-color has-text-color"

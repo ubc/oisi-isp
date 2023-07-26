@@ -18,9 +18,9 @@
 	<div class="wp-block-group isp-story-card">
 		<!-- wp:post-featured-image {"isLink":true,"width":"","height":"","align":"full"} /-->
 
-		<!-- wp:group {"className":"isp-story-card\u002d\u002ddetails","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"isp-story-card--details","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group isp-story-card--details">
-			<!-- wp:group {"className":"isp-story-card\u002d\u002ddate","layout":{"type":"constrained"}} -->
+			<!-- wp:group {"className":"isp-story-card--date","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group isp-story-card--date">
 				<!-- wp:post-terms {"term":"post_tag","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600","fontSize":"12px","letterSpacing":"0.1em"},"elements":{"link":{"color":{"text":"var:preset|color|isp-calcite"}}}},"textColor":"isp-calcite","className":"isp-story-card__tag"} /-->
 

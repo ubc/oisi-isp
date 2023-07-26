@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Callout Block With Line
- * Slug: meetgoat/callout-line
+ * Slug: meetgoat/layout-callout-line
  * Categories: ubc-callout-layouts
  * Viewport Width: 1280
  * Block Types: core/template-part/UBC Callout
@@ -12,7 +12,7 @@
 
 ?>
 
-<!-- wp:group {"align":"full","backgroundColor":"isp-sand_2","className":"isp-callout-block isp-callout-block\u002d\u002dlined","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","backgroundColor":"isp-sand_2","className":"isp-callout-block isp-callout-block--lined","layout":{"type":"constrained"}} -->
 <div
 	class="wp-block-group alignfull isp-callout-block isp-callout-block--lined has-isp-sand-2-background-color has-background">
 	<!-- wp:group {"layout":{"type":"constrained","contentSize":"760px"}} -->
@@ -48,3 +48,28 @@
 	<!-- /wp:spacer -->
 </div>
 <!-- /wp:group -->
+
+
+
+
+<div class="gta-post-list">
+	<div class="post"></div>
+	<div class="post"></div>
+	<div class="post"></div>
+	<div class="post"></div>
+	<div class="post"></div>
+</div>
+<div class="gta-post-pagination" id="gta-pagination" hx-swap-oob="true">
+	<a hx-get="http://website.com/blog/page/1" hx-target=".gta-post-list" href="http://website.com/blog/page/1" class="prev">Prev</a>
+	<a hx-get="http://website.com/blog/page/1" hx-target=".gta-post-list" class="page">1</a>
+	<span class="page">2</span>
+	<a hx-get="http://website.com/blog/page/3" hx-target=".gta-post-list" class="page">3</a>
+	<a hx-get="http://website.com/blog/page/4" hx-target=".gta-post-list" class="next">Next</a>
+	<a hx-get="http://website.com/blog/page/2" hx-target=".gta-post-list" class="next">Next</a>
+</div>
+<div class="gta-post-load-more" id="gta-load-more" hx-swap-oob="true">
+	<button hx-get="http://website.com/blog/page/2" hx-target=".gta-post-list" hx-swap="beforeend">Load More</button>
+</div>
+<div class="infinitescroll" id="gta-load-more" hx-swap-oob="true">
+	<span class="loading_spinner" hx-get="http://website.com/blog/page/2" hx-trigger="revealed" hx-swap="afterend"></span>
+</div>
