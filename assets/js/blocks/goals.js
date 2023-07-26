@@ -1,4 +1,4 @@
-/* global jQuery */
+import { slideToggle } from '../utilities/slideToggle';
 
 export function initializeGoals() {
 	const goalsElements = document.querySelectorAll( '.isp-goals' );
@@ -15,35 +15,21 @@ const Goals = {
 	container: null,
 	slides: null,
 	buttons: null,
-	buttonGroup: null,
 
 	init( containerElement ) {
 		this.wrapper = containerElement;
 		this.carousel = containerElement.querySelector( '.isp-goals__slides' );
 		this.slides = containerElement.querySelectorAll( '.isp-goals__slide' );
 
+		this.setupContainer();
+
 		this.getOnLoadSlide();
 
 		this.setupButtons();
 
-		this.buttons =
-			this.buttonGroup.querySelectorAll( '.isp-goals__button' );
-
-		this.setupContainer();
-
 		this.setupAccordionToggle();
 
 		this.setCurrentSlide();
-
-		jQuery( this.container ).on( 'click', '.isp-goals__button', ( e ) => {
-			e.preventDefault();
-			const button = jQuery( e.currentTarget );
-			const buttonIndex = button.data( 'index' );
-			if ( buttonIndex !== this.currentSlide ) {
-				this.currentSlide = buttonIndex;
-				this.setCurrentSlide();
-			}
-		} );
 	},
 
 	getOnLoadSlide() {
@@ -54,23 +40,23 @@ const Goals = {
 				const slideHash = '#' + slide.getAttribute( 'id' );
 				if ( slideHash === loadHash ) {
 					this.currentSlide = i;
-
-					jQuery( 'html, body' ).animate(
-						{ scrollTop: jQuery( this.wrapper ).offset().top - 80 },
-						500
-					);
+					window.scrollTo( {
+						top: this.wrapper.offsetTop - 80,
+						behavior: 'smooth',
+					} );
 				}
 			}
 		}
 	},
 
+	// Add container element to wrap the carousel.
 	setupContainer() {
+		// Create the container.
 		this.container = document.createElement( 'div' );
 		this.container.classList.add( 'isp-goals__container' );
-
-		this.container.appendChild( this.buttonGroup );
+		// Move the carousel to the container.
 		this.container.appendChild( this.carousel );
-
+		// Add the container to the wrapper.
 		this.wrapper.appendChild( this.container );
 	},
 
@@ -81,35 +67,58 @@ const Goals = {
 		for ( let i = 0; i < this.slides.length; i++ ) {
 			const slide = this.slides[ i ];
 
+			// Create the button for this goal.
 			const button = document.createElement( 'button' );
 			button.classList.add( 'isp-goals__button' );
 			button.setAttribute( 'data-index', i );
 
+			// Add event listener to button
+			button.addEventListener( 'click', ( e ) => {
+				e.preventDefault();
+				const buttonIndex = button.getAttribute( 'data-index' );
+				if ( buttonIndex !== this.currentSlide ) {
+					this.currentSlide = parseInt( buttonIndex );
+					this.setCurrentSlide();
+				}
+			} );
+
+			// Get the eyebrow test.
 			const eyebrowText = slide.querySelector(
 				'.isp-goals__header__eyebrow'
 			);
-			const titleText = slide.querySelector(
-				'.isp-goals__header__title'
-			);
-
+			// If the eyebrow text is set, add it to the button.
 			if ( eyebrowText ) {
-				const eyebrow = document.createElement( 'h6' );
-				eyebrow.classList.add( 'isp-goals__button__eyebrow' );
-				eyebrow.textContent = eyebrowText
-					? eyebrowText.textContent
-					: null;
-				button.appendChild( eyebrow );
+				// Create element.
+				const eyebrowElement = document.createElement( 'h6' );
+				// Add class.
+				eyebrowElement.classList.add( 'isp-goals__button__eyebrow' );
+				// Add content.
+				eyebrowElement.textContent = eyebrowText.textContent;
+				// Add to button.
+				button.appendChild( eyebrowElement );
 			}
+
+			// Get the title text.
+			const titleText = slide.querySelector( '.isp-goals__header__title' );
+			// If the title text is set, add it to the button.
 			if ( titleText ) {
-				const title = document.createElement( 'h3' );
-				title.classList.add( 'isp-goals__button__title' );
-				title.textContent = titleText ? titleText.textContent : null;
-				button.appendChild( title );
-				button.appendChild( title );
+				// Create element.
+				const titleElement = document.createElement( 'h3' );
+				// Add class.
+				titleElement.classList.add( 'isp-goals__button__title' );
+				// Add content.
+				titleElement.textContent = titleText.textContent;
+				// Add to button.
+				button.appendChild( titleElement );
 			}
+			// Add button to button group.
 			buttonGroup.appendChild( button );
 		}
-		this.buttonGroup = buttonGroup;
+		// Store the group of buttons.
+		this.buttons = buttonGroup.children;
+
+		// Add the button group to the container.
+		this.container.prepend( buttonGroup );
 	},
 
 	setCurrentSlide() {
@@ -129,20 +138,29 @@ const Goals = {
 				button.classList.remove( 'is-active' );
 			}
 		}
-		// window.location.hash = this.slides[this.currentSlide].getAttribute("id");
 	},
 
 	setupAccordionToggle() {
-		jQuery( this.container )
-			.find( '.isp-goals__header' )
-			.append( '<button class="isp-goals__toggle"></button>' );
+		const goalsToggleElement = document.createElement( 'button' );
+		goalsToggleElement.classList.add( 'isp-goals__toggle' );
+		goalsToggleElement.setAttribute( 'aria-label', 'Toggle Goal' );
 
-		jQuery( this.container ).on( 'click', '.isp-goals__toggle', ( e ) => {
-			jQuery( e.target )
-				.closest( '.isp-goals__slide' )
-				.toggleClass( 'is-goal--open' )
-				.find( '.isp-goals__body' )
-				.slideToggle();
+		this.container.addEventListener( 'click', ( e ) => {
+			if ( e.target.classList.contains( 'isp-goals__toggle' ) ) {
+				e.preventDefault();
+				const slide = e.target.closest( '.isp-goals__slide' );
+				if ( slide ) {
+					slide.classList.toggle( 'is-goal--open' );
+					const body = slide.querySelector( '.isp-goals__body' );
+					slideToggle( body );
+				}
+			}
 		} );
+
+		this.container
+			.querySelectorAll( '.isp-goals__header' )
+			.forEach( ( element ) => {
+				element.appendChild( goalsToggleElement.cloneNode( true ) );
+			} );
 	},
 };
