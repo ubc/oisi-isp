@@ -1,0 +1,759 @@
+/*
+*   Pole Block Container
+*/
+
+.isp-pole {
+	position: relative;
+	overflow: hidden;
+	--isp-pole--scale: 1.42;
+
+	@media (--query-md) {
+		--isp-pole--scale: 3.35;
+	}
+}
+
+.isp-pole__inner {
+	position: relative;
+	padding: 56px 0;
+	z-index: 2;
+	max-width: 1030px !important;
+	margin: 0 auto;
+	transition: var(--transition);
+}
+
+.isp-pole__background {
+	--page-gutter: calc(50vw - min(640px, 50vw));
+	--container-width: min(1280px, 100vw);
+	--percent-width: 0.8;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	right: 0;
+	transition: var(--transition);
+
+	/* Width is 80% of the container + the right page gutter */
+	width: calc((var(--container-width) * var(--percent-width)) + var(--page-gutter));
+	background: var(--sand-2);
+	border-radius: 40px 0 0 400px;
+	z-index: 1;
+	margin: 0;
+}
+
+/*
+*   Introduction Content
+*/
+.isp-pole__intro__container {
+	display: flex;
+	position: static;
+	flex-direction: column;
+}
+
+.isp-pole__intro {
+	transition: var(--transition);
+	margin: 100px 0 !important;
+	max-width: 500px;
+}
+
+.isp-pole__explore {
+	transition: var(--transition);
+	margin-top: 74px !important;
+}
+
+/*
+*   Totem Level Content
+*/
+.isp-pole__levels:not(.block-editor-block-list__block) {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: calc(50% - 16px);
+	margin: 0 !important;
+}
+
+.isp-pole__level:not(.block-editor-block-list__block) {
+	grid-column: 1 / 1;
+	grid-row: 1 / 1;
+	margin: 0 !important;
+	transition: var(--transition);
+	opacity: 0;
+	pointer-events: none;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+
+	&.isp-pole__level--active {
+		position: relative;
+		opacity: 1;
+		pointer-events: all;
+	}
+}
+
+.isp-pole__level__content {
+	width: 290px;
+	margin: 24px 0 0 !important;
+}
+
+/* Display Content */
+.isp-pole__display {
+	opacity: 0;
+	transition: var(--transition);
+	display: none;
+}
+
+.isp-pole__level__number {
+	width: 32px;
+	height: 32px;
+	background: var(--calcite);
+	color: #fff;
+	text-decoration: center;
+	margin: 0 !important;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: var(--opensans);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 95%;
+}
+
+.isp-pole__level__top {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+
+	&::after {
+		content: "";
+		flex: auto;
+		display: block;
+		height: 1px;
+		background: var(--calcite);
+		position: absolute;
+		left: 42px;
+		transition: var(--transition);
+		width: 0;
+	}
+}
+
+.isp-pole__level--active {
+
+	.isp-pole__level__top::after {
+		width: 50%;
+
+		@media (--query-md) {
+			width: 60%;
+		}
+	}
+}
+
+/*
+*   Totem Pole Section
+*/
+.isp-pole__pole {
+	height: 100%;
+	max-width: 503px;
+	position: relative;
+}
+
+.isp-pole__pole__inner {
+	max-width: 340px !important;
+	margin-left: auto;
+}
+
+/*
+*   Totem Pole Section
+*/
+.isp-pole__levels,
+.isp-pole__level {
+	position: static;
+}
+
+.isp-pole__pole__inner {
+
+	.isp-pole__image {
+		width: 100%;
+		float: none !important;
+		margin: 0 auto !important;
+		display: block;
+		text-align: right !important;
+		pointer-events: none;
+		position: relative;
+		height: 590px;
+
+		& img {
+			height: 590px;
+			position: absolute !important;
+			width: auto;
+			right: 70px;
+			margin: 0 auto;
+			z-index: 10;
+			transition: var(--transition);
+			transform-origin: center bottom;
+			max-width: none;
+		}
+
+		.components-resizable-box__container {
+			margin-left: auto;
+		}
+	}
+}
+
+/*
+* Markers
+*/
+.isp-pole__markers {
+	position: absolute !important;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	.isp-pole__marker {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		.wp-block-buttons {
+			width: 100%;
+			margin: 0 !important;
+			display: flex !important;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 8px;
+			cursor: pointer;
+
+			&::after {
+				content: "";
+				flex: auto;
+				height: 1px;
+				background: var(--calcite);
+				opacity: 0.2;
+			}
+
+			.wp-element-button {
+				display: block;
+				width: 32px;
+				height: 32px;
+				border: none !important;
+				background: #fff !important;
+				padding: 4px !important;
+				border-radius: 50% !important;
+				color: var(--calcite) !important;
+				text-align: center;
+				line-height: 28px;
+				font-family: var(--opensans);
+				font-weight: 700;
+
+				&::after {
+					display: none;
+				}
+
+				&::before {
+					content: "Learn more";
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					background: var(--calcite);
+					border-radius: 16px;
+					color: #fff;
+					white-space: nowrap;
+					line-height: 32px;
+					padding: 0 16px;
+					font-family: var(--opensans);
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 700;
+					text-transform: none;
+					opacity: 0;
+					pointer-events: none;
+					transition: var(--transition);
+				}
+
+				&:hover,
+				&:focus,
+				&:focus-within {
+					background: #fff !important;
+					color: var(--calcite) !important;
+
+					&::before {
+						opacity: 1;
+						pointer-events: all;
+					}
+				}
+			}
+
+			&:hover,
+			&:focus,
+			&:focus-within {
+
+				.wp-element-button {
+					background: #fff !important;
+					color: var(--calcite) !important;
+
+					&::before {
+						opacity: 1;
+						pointer-events: all;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+ * Points
+*/
+.isp-pole__points {
+	position: absolute !important;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 !important;
+	width: 100%;
+	pointer-events: none;
+}
+
+.isp-pole__point {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+
+.isp-pole__point__inner {
+	border-top: solid 1px var(--calcite);
+	padding-top: 4px;
+	pointer-events: all;
+	overflow: hidden;
+}
+
+/* pagination  */
+.isp-pole__pagination {
+	opacity: 0;
+	max-width: calc(var(--wp--style--global--content-size) + 32px) !important;
+	pointer-events: none;
+	transition: var(--transition);
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	padding: 0 16px;
+}
+
+.isp-pole__pagination__inner,
+.isp-pole__pagination__pages {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.isp-pole__pagination__item {
+	border: none;
+	width: 16px;
+	height: 4px;
+	overflow: hidden;
+	text-indent: 9999px;
+	background: var(--sand-1);
+	transition: var(--transition);
+	border-radius: 8px;
+
+	&.is-active,
+	&:hover,
+	&:focus {
+		background: var(--calcite);
+	}
+
+	&.is-active {
+		width: 32px;
+	}
+}
+
+.isp-pole__pagination__previous,
+.isp-pole__pagination__next {
+	background: none;
+	appearance: none;
+	outline: none;
+	border: none;
+	padding: 0;
+	color: var(--calcite);
+	transition: var(--transition);
+
+	&.is-disabled {
+		pointer-events: none;
+		opacity: 0.5;
+		color: var(--ubc-grey);
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--ubc-primary);
+	}
+
+	& svg {
+		display: block;
+		transition: var(--transition);
+	}
+}
+
+/*  Open  */
+.isp-pole__close {
+	opacity: 0;
+	pointer-events: none;
+	transition: var(--transition);
+	position: absolute;
+	top: 0;
+	right: 42px;
+	background: none;
+	border: none;
+	outline: none;
+	color: var(--calcite);
+	appearance: none;
+	z-index: 10;
+}
+
+.isp-pole--open {
+	position: relative;
+
+	/* Container */
+	.isp-pole__inner {
+		position: relative;
+		padding: 0;
+		max-width: 1280px !important;
+	}
+
+	.isp-pole__background {
+		--percent-width: 0.5;
+	}
+
+	.isp-pole__close {
+		opacity: 1;
+		pointer-events: all;
+
+		&:hover,
+		&:focus {
+			scale: 1.1;
+			opacity: 0.8;
+		}
+	}
+
+	/* Introduction */
+
+	.wp-block-column:has(> .isp-pole__intro) {
+		align-self: flex-start !important;
+	}
+
+	.isp-pole__intro__container {
+
+		/* flex-grow: 0 !important; */
+
+		/* flex-basis: 51% !important; */
+	}
+
+	.isp-pole__intro {
+		margin: 0 !important;
+	}
+
+	/* Explore Button */
+	.isp-pole__intro__button {
+		pointer-events: none;
+		opacity: 0;
+		visibility: hidden;
+		display: none;
+	}
+
+	/* Layers */
+	.isp-pole__levels {
+		display: grid;
+		margin-top: 68px;
+	}
+
+	/* Pole  */
+	.isp-pole__image {
+		padding: 0 !important;
+
+		& img {
+
+			/* scale: var(--isp-pole--scale, 3.35); */
+			height: 1977px;
+			right: -75px;
+		}
+	}
+
+	.isp-pole__markers,
+	.isp-pole__points {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.isp-pole__pagination {
+		opacity: 1;
+		pointer-events: all;
+		z-index: 20;
+	}
+}
+
+.isp-pole__close__mobile {
+	display: none;
+}
+
+@media (--query-mx-sm) {
+
+	/*  MOBILE  */
+	.isp-pole {
+
+		.isp-pole__intro,
+		.isp-pole__intro__container {
+			display: contents;
+		}
+
+		.isp-pole__inner {
+			padding: 0;
+		}
+
+		.isp-pole__inner > .wp-block-columns {
+			width: 100%;
+			display: grid;
+			gap: 0;
+		}
+
+		.isp-pole__close {
+			display: none;
+		}
+
+		.isp-pole__intro__content {
+			margin-bottom: 26px !important;
+			transition: var(--transition);
+
+			& p {
+				margin-top: 9px !important;
+			}
+		}
+
+		.isp-pole__intro__button {
+			order: 5;
+			width: 100%;
+			margin: 0;
+			padding: 16px;
+			border-radius: 0 0 16px 16px;
+			background: var(--sand-2);
+
+
+			.isp-pole__explore {
+				margin: 0 !important;
+			}
+		}
+
+		.isp-pole__background {
+			display: none;
+		}
+
+		.isp-pole__close__mobile {
+			font-family: var(--opensans);
+			background: none;
+			border: none;
+			outline: none;
+			appearance: none;
+			position: absolute;
+			top: 16px;
+			left: 16px;
+			margin: 0 !important;
+			display: inline-flex;
+			align-items: center;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 100%; /* 14px */
+			letter-spacing: 1.4px;
+			text-transform: uppercase;
+			color: var(--primary);
+			opacity: 0;
+			transition: var(--transition);
+			pointer-events: none;
+
+			& svg {
+				margin-left: 4px;
+			}
+
+			&:hover {
+				color: var(--calcite);
+			}
+		}
+
+		.isp-pole__pole {
+			width: 100%;
+			background: var(--sand-2);
+			padding: 24px 16px;
+			border-radius: 16px 16px 0 0;
+			max-width: 100%;
+			overflow: hidden;
+
+		}
+
+		.isp-pole__pole__inner {
+			margin: 0 auto;
+			padding: 0;
+			max-width: 230px !important;
+
+			> .wp-block-columns {
+				gap: 0;
+			}
+
+			.isp-pole__point__inner {
+				margin: 0 !important;
+				text-align: left;
+			}
+
+		}
+
+
+		.isp-pole__pagination {
+			background: var(--sand-3);
+			position: relative;
+			bottom: 0;
+			margin: 0 !important;
+			z-index: 10;
+			padding: 16px;
+			border-radius: 0 0 16px 16px;
+			display: none;
+			transition: none;
+		}
+
+		.isp-pole__pagination__inner {
+			justify-content: space-between;
+		}
+
+		.isp-pole__pagination__pages {
+			gap: 8px;
+		}
+
+		.isp-pole__pagination__item {
+			width: 8px;
+
+			&.is-active {
+				width: 32px;
+			}
+		}
+
+
+		.isp-pole__levels {
+			order: 6;
+			position: relative;
+			top: 0;
+			transform: none;
+			z-index: 20;
+			background: var(--sand-3);
+			text-align: center;
+			margin: 0 !important;
+			padding: 16px;
+		}
+
+		.isp-pole__level__top {
+			display: none;
+		}
+
+		.isp-pole__level {
+			margin: 0 !important;
+		}
+
+		.isp-pole__level__content {
+			margin: 0 auto;
+			padding: 0 24px;
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.isp-pole__image {
+			display: flex;
+			justify-content: center;
+			padding: 0;
+			height: 390px;
+
+			& img {
+				height: 100%;
+				right: auto;
+				left: auto;
+			}
+		}
+
+		.isp-pole__markers {
+			opacity: 0;
+		}
+
+		.isp-pole__point {
+
+			> .wp-block-group {
+				margin-left: 0 !important;
+				margin-right: 0 !important;
+				padding-right: 20px;
+			}
+		}
+
+
+		&.isp-pole--js {
+
+			.isp-pole__markers {
+
+				.isp-pole__marker {
+					margin: 0 !important;
+					top: 50%;
+					left: 0;
+					opacity: 0;
+
+					.wp-block-buttons::after {
+						position: absolute;
+						left: 40px;
+						right: calc(100% - 40px);
+						top: 50%;
+						transition: var(--transition);
+					}
+				}
+			}
+		}
+
+
+		&.isp-pole--open {
+
+			.isp-pole__markers {
+				opacity: 1;
+			}
+
+			.isp-pole__close__mobile {
+				opacity: 1;
+				pointer-events: all;
+			}
+
+			.isp-pole__intro__content {
+				translate: 0 -100%;
+				margin-bottom: -100% !important;
+			}
+
+			.isp-pole__marker.isp-pole__marker--active {
+				opacity: 1;
+
+				.wp-block-buttons::after {
+					right: 30px;
+				}
+			}
+
+			.isp-pole__image img {
+				left: 35% !important;
+				height: 839px;
+			}
+
+			.isp-pole__pagination {
+				display: block;
+			}
+		}
+	}
+
+}
