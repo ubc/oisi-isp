@@ -5,6 +5,7 @@
 --button-bg--alt
 --button-border
 */
+
 .wp-block-search__button,
 .wp-element-button,
 .button-standard,
@@ -92,9 +93,20 @@
 
 	& > svg,
 	& > img {
-		margin-left: var(--scale-xs);
 		max-width: var(--scale);
 		max-height: var(--scale);
+		margin-left: var(--scale-xs);
+
+	}
+
+	@media (--query-mx-md) {
+		padding: 7px 16px !important;
+
+		& > svg,
+		& > img {
+			margin-left: var(--scale-xxs);
+
+		}
 	}
 }
 

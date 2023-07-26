@@ -6,50 +6,6 @@
 	list-style: none !important;
 	position: relative;
 
-	.slick-list {
-		overflow: visible;
-	}
-
-	.slick-list {
-		margin-top: 0;
-	}
-
-	.slick-arrow {
-		position: absolute;
-		bottom: 16px;
-		right: 16px;
-		width: 42px;
-		height: 42px;
-		background-color: #fff;
-		border-radius: 4px;
-		appearance: none;
-		z-index: 10;
-		overflow: hidden;
-		text-indent: 999em;
-		outline: none;
-		box-shadow: none;
-		border: none;
-
-		&:hover,
-		&:focus {
-			box-shadow: var(--shadow-1);
-			background-color: var(--sand-3);
-		}
-
-		&.slick-prev {
-			margin-right: 50px;
-			background-image: url(../../images/slider-arrow.svg);
-			background-repeat: no-repeat;
-			background-position: center center;
-		}
-
-		&.slick-next {
-			background-image: url(../../images/slider-arrow-next.svg);
-			background-repeat: no-repeat;
-			background-position: center center;
-		}
-	}
-
 	.wp-block-post {
 		margin-bottom: 0;
 	}
@@ -93,5 +49,65 @@
 
 	.wp-block-read-more {
 		margin-top: 64px;
+	}
+
+}
+
+.isp-post-slider__slides {
+	display: grid;
+
+	> .wp-block-post {
+		grid-column: 1 / 1;
+		grid-row: 1 / 1;
+		transition: var(--transition);
+		opacity: 0;
+		pointer-events: none;
+		margin: 0;
+
+		&.isp-post-slider__slide--active {
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+}
+
+.isp-post-slider__buttons {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	z-index: 50;
+	display: flex;
+	gap: 16px;
+}
+
+.isp-post-slider__button {
+	width: 42px;
+	height: 42px;
+	background-color: #fff;
+	border-radius: 4px;
+	appearance: none;
+	z-index: 10;
+	overflow: hidden;
+	text-indent: 999em;
+	outline: none;
+	box-shadow: none;
+	border: none;
+
+	&:hover,
+	&:focus {
+		box-shadow: var(--shadow-1);
+		background-color: var(--sand-3);
+	}
+
+	&.isp-post-slider__button--previous {
+		background-image: url(../../images/slider-arrow.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	&.isp-post-slider__button--next {
+		background-image: url(../../images/slider-arrow-next.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
 	}
 }

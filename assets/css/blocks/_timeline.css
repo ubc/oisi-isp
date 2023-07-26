@@ -17,6 +17,23 @@
 
 .isp-timeline__decade {
 	margin-bottom: 80px !important;
+	position: relative;
+}
+
+.isp-timeline__scroll-trigger {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 1px;
+	opacity: 0;
+	pointer-events: none;
+	margin: 0 !important;
+}
+
+.isp-timeline__scroll-trigger--bottom {
+	bottom: 0;
+	top: auto;
 }
 
 .isp-timeline__buttons {
@@ -105,7 +122,7 @@
 .isp-timeline__decade__intro {
 	border-radius: 0 8px 56px 0;
 	padding: 8px;
-	margin: 32px 0;
+	margin: 0 !important;
 
 	@media (--query-mx-md) {
 		padding: 0;
@@ -161,22 +178,25 @@
 
 	@media (--query-md) {
 
-		&:has(+ .isp_timeline__year__event) {
 
-			&::before {
-				pointer-events: none;
-				position: absolute;
-				content: "";
-				width: 20px;
-				border-radius: 0 0 0 16px;
-				border-bottom: solid 2px var(--sand-1);
-				border-left: solid 2px var(--sand-1);
-				right: 100%;
-				z-index: 2;
-				top: 12px;
-				bottom: -38px;
-			}
+		&::before {
+			pointer-events: none;
+			position: absolute;
+			content: "";
+			width: 20px;
+			border-radius: 0 0 0 16px;
+			border-bottom: solid 2px var(--sand-1);
+			border-left: solid 2px var(--sand-1);
+			right: 100%;
+			z-index: 2;
+			top: 12px;
+			bottom: -38px;
 		}
+
+		&:last-child::before {
+			display: none;
+		}
+
 	}
 }
 

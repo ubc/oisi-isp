@@ -156,6 +156,34 @@
 			gap: 24px;
 		}
 	}
+
+	@media (--query-mx-sm) {
+
+		.isp-key-date__details {
+			padding: 4px 0;
+		}
+
+		& a {
+			padding: 12px 0;
+
+			.wp-block-columns {
+				gap: 4px;
+			}
+		}
+
+		.isp-key-date__date {
+			display: block;
+			margin: 0;
+
+			& br {
+				display: none;
+			}
+
+			.wp-block-columns {
+				gap: 12px;
+			}
+		}
+	}
 }
 
 .isp-key-date {

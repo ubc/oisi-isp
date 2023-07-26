@@ -6,6 +6,7 @@
 	height: 100%;
 	border-radius: 46px;
 
+	.isp-cta__container,
 	& > a {
 		position: relative;
 		z-index: 100;
@@ -33,6 +34,13 @@
 			height: 100%;
 			display: block;
 		}
+	}
+}
+
+.isp-cta__image--background {
+
+	& img {
+		object-fit: cover;
 	}
 }
 
@@ -71,9 +79,11 @@
 /*  CTA -- B style */
 .isp-cta-b {
 
+	.isp-cta__container,
 	& a {
 		padding: 24px;
 		display: block;
+		background: var(--sand-2);
 
 		&:hover,
 		&:focus {
@@ -89,8 +99,10 @@
 /*  CTA -- B style CURVED */
 .isp-cta-b--curved {
 
+	.isp-cta__container,
 	& a {
 		border-radius: 16px 16px 80px 16px;
+		background: var(--sand-2);
 
 		@media (--query-sm) {
 			border-radius: 16px 16px 160px 16px;
@@ -314,6 +326,17 @@
 
 		& img {
 			border-radius: 8px 8px 80px 8px;
+		}
+	}
+
+	@media (--query-mx-sm) {
+
+		.isp-cta__content {
+			padding: 8px 16px 24px;
+		}
+
+		.wp-block-heading.button-standard {
+			width: 100%;
 		}
 	}
 

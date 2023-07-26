@@ -13,6 +13,12 @@
 
 	.isp-impact-stories__posts {
 		height: 100%;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+	}
+
+	.wp-block-column {
+		scroll-snap-align: center;
 	}
 
 	@media (--query-mx-lg) {

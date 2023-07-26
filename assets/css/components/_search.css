@@ -116,7 +116,10 @@
 }
 
 .wp-block-search__button {
-	min-width: 180px;
+
+	@media (--query-md) {
+		min-width: 180px;
+	}
 }
 
 .isp-faq__filters__buttons {

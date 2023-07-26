@@ -55,11 +55,21 @@
 		margin: 0;
 	}
 
+	.wp-block-button__link {
+		white-space: nowrap;
+	}
+
 	@media (--query-mx-md) {
 		text-align: center;
+		padding: 24px;
 
 		.wp-block-buttons {
 			justify-content: center;
+		}
+
+		.wp-block-button,
+		.wp-block-button__link {
+			width: 100%;
 		}
 	}
 }
@@ -137,4 +147,24 @@
 
 [class*="wp-block"] {
 	position: relative;
+}
+
+
+/*
+*   Video Block
+*/
+
+.wp-block-video {
+
+	& video {
+		border-radius: 8px;
+
+	}
+
+	@media (--query-md) {
+
+		& video {
+			border-radius: 16px;
+		}
+	}
 }

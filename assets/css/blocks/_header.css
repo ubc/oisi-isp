@@ -34,7 +34,7 @@ div [class*="wp-block"].isp-header {
 
 .isp-header--squiggle {
 	position: absolute;
-	z-index: 20;
+	z-index: 5;
 	top: 50px;
 	left: -20px;
 
@@ -66,6 +66,20 @@ div [class*="wp-block"].isp-header {
 		height: 24px;
 		top: 32px;
 		right: -20px;
+	}
+
+	.isp-header--1 {
+
+		.ubc-isp-nav__container {
+			display: none;
+		}
+	}
+
+	.isp-header--3 {
+
+		.isp-breadcrumbs--small {
+			background: var(--sand-2);
+		}
 	}
 }
 

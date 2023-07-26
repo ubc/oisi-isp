@@ -27,10 +27,10 @@
 	--font-size-blog-date: 12px;
 
 	@media (--query-sm) {
-		--font-size-h1: 48px;
-		--font-size-h2: 39px;
-		--font-size-h3: 32px;
-		--font-size-h4: 25px;
+		--font-size-h1: 40px;
+		--font-size-h2: 30px;
+		--font-size-h3: 26px;
+		--font-size-h4: 23px;
 		--font-size-h5: 20px;
 		--font-size-h6: 16px;
 
@@ -38,6 +38,13 @@
 		--font-size-p-lg: 18px;
 		--font-size-p: 16px;
 		--font-size-p-sm: 14px;
+	}
+
+	@media (--query-md) {
+		--font-size-h1: 48px;
+		--font-size-h2: 39px;
+		--font-size-h3: 32px;
+		--font-size-h4: 25px;
 	}
 }
 
