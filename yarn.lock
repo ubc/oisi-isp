@@ -16330,15 +16330,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"slick-carousel@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "slick-carousel@npm:1.8.1"
-  peerDependencies:
-    jquery: ">=1.8.0"
-  checksum: ad3a255ae555b34bda507df53a4fd740b1da7828dd23512b3e661c5aff2b933662e3a5e251b9ac945cf768e92e2a918186d649b293aba3c47d9779c0db99e054
-  languageName: node
-  linkType: hard
-
 "smart-buffer@npm:^4.2.0":
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
@@ -17700,7 +17691,6 @@ __metadata:
     postcss-preset-env: "npm:^8.4.2"
     prettier: "npm:wp-prettier@^2.8.5"
     simplebar: "npm:^6.2.5"
-    slick-carousel: "npm:^1.8.1"
     webpack: "npm:^5.85.1"
   languageName: unknown
   linkType: soft

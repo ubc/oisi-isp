@@ -30,7 +30,6 @@
 		"@wordpress/block-editor": "^8.0.9",
 		"@wordpress/blocks": "^11.1.4",
 		"@wordpress/i18n": "^4.2.4",
-		"simplebar": "^6.2.5",
-		"slick-carousel": "^1.8.1"
+		"simplebar": "^6.2.5"
 	}
 }
