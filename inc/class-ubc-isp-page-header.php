@@ -19,6 +19,8 @@ class UBC_ISP_Page_Header {
 	public static function init() {
 		add_action( 'template_redirect', array( __CLASS__, 'setup_header' ), 10 );
 		add_filter( 'body_class', array( __CLASS__, 'add_body_class' ), 10, 1 );
+
+		add_filter( 'walker_nav_menu_start_el', array( __CLASS__, 'modify_third_menu_output' ), 10, 4 );
 	}
 
 	/**
@@ -31,6 +33,8 @@ class UBC_ISP_Page_Header {
 
 		// Add menu depth class to menu items.
 		add_filter( 'nav_menu_css_class', array( __CLASS__, 'menu_depth_class' ), 10, 4 );
+		// Add sub menu depth class to sub menu items.
+		add_filter( 'nav_menu_submenu_css_class', array( __CLASS__, 'sub_menu_depth_class' ), 10, 3 );
 
 		switch ( self::header_size() ) {
 			case ( 1 ):
@@ -157,7 +161,7 @@ class UBC_ISP_Page_Header {
 	 * Add the header image.
 	 */
 	public static function header_image() {
-		if ( has_post_thumbnail() ) :
+		if ( has_post_thumbnail() ) : 
 			?>
 			<div class="isp-header__featured-img">
 				<img src="<?php echo esc_url( get_the_post_thumbnail_url() ); ?>">
@@ -187,10 +191,9 @@ class UBC_ISP_Page_Header {
 	public static function third_level_nav() {
 		wp_nav_menu(
 			array(
-				'theme_location'  => 'primary',
+				'theme_location'  => 'third_menu',
 				'container_class' => 'ubc-isp-nav__container',
 				'container_id'    => 'ubc-isp-nav__menu',
-				'walker'          => new UBC_ISP_Sub_Menu_Walker(),
 				'menu_class'      => 'ubc-isp-nav',
 			)
 		);
@@ -209,6 +212,20 @@ class UBC_ISP_Page_Header {
 		return $classes;
 	}
 
+
+	/**
+	 * Add a menu depth class to primary menu
+	 *
+	 * @param mixed $classes classes.
+	 * @param mixed $args args.
+	 * @param mixed $depth depth.
+	 */
+	public static function sub_menu_depth_class( $classes, $args, $depth = 0 ) {
+		$classes[] = 'sub-menu--' . $depth;
+		return $classes;
+	}
+	
+
 	/**
 	 * Hide the home breadcrumb (the setting doesn't seam to hide it)
 	 * 
@@ -219,6 +236,66 @@ class UBC_ISP_Page_Header {
 		$args['show_home'] = false;
 		return $args;
 	}
+	
+	/**
+	 * Modifies the 'third_menu' menu output as required.
+	 *
+	 * @param mixed $item_output item output.
+	 * @param mixed $item item.
+	 * @param mixed $depth depth.
+	 * @param mixed $args args.
+	 * @return mixed
+	 */
+	public static function modify_third_menu_output( $item_output, $item, $depth, $args ) {
+		// Exit if it's not the third menu.
+		if ( 'third_menu' !== $args->theme_location ) {
+			return $item_output;
+		}
+
+		$item_output = self::add_submenu_toggle_button( $item_output, $item );
+		$item_output = self::add_submenu_item_descriptions( $item_output, $item, $depth );
+
+		return $item_output;
+	}
+	
+	/**
+	 * Add a description to the third level menu sub menus.
+	 *
+	 * @param mixed $item_output item output.
+	 * @param mixed $item item.
+	 * @param mixed $depth depth.
+	 * @return mixed
+	 */
+	public static function add_submenu_item_descriptions( $item_output, $item, $depth ) {
+		// Check if it is the desired menu location and sub-menu level.
+		if ( $depth <= 1 ) {
+			return $item_output;
+		}
+		if ( ! isset( $item->description ) || ! $item->description ) {
+			return $item_output;
+		}
+		return sprintf(
+			'<div class="description-container isp-desktop-only"><p class="description">%s</p></div>%s',
+			esc_html( $item->description ),
+			$item_output
+		);
+	}
+
+	/**
+	 * Add a toggle button to thid menu items with children..
+	 *
+	 * @param mixed $item_output item output.
+	 * @param mixed $item item.
+	 * @return mixed
+	 */
+	public static function add_submenu_toggle_button( $item_output, $item ) {
+		// Add a button element inside the <a> tag if the link has children.
+		if ( in_array( 'menu-item-has-children', $item->classes, true ) ) {
+			$item_output = str_replace( '</a>', '<button class="sub-menu__toggle isp-mobile-only"></button></a>', $item_output );
+		}
+		return $item_output;
+	}
+
 }
 
 UBC_ISP_Page_Header::init();

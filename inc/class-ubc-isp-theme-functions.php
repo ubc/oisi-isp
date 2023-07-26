@@ -16,8 +16,9 @@ class UBC_ISP_Theme_Functions {
 	/**
 	 * Setup the theme hooks
 	 */
-	public static function theme_hooks() {   
+	public static function theme_hooks() {
 		add_action( 'after_setup_theme', array( 'UBC_ISP_Theme_Functions', 'theme_setup' ), 20, 2 );
+		add_action( 'init', array( 'UBC_ISP_Theme_Functions', 'add_third_menu_position' ) );
 
 		add_action( 'wp_enqueue_scripts', array( 'UBC_ISP_Theme_Functions', 'theme_scripts' ) );
 		add_action( 'enqueue_block_editor_assets', array( 'UBC_ISP_Theme_Functions', 'editor_scripts' ) );
@@ -99,5 +100,17 @@ class UBC_ISP_Theme_Functions {
 	public static function close_footer_wrap() {
 		echo '</div>';
 	}
+
+	/**
+	 * Add third menu position
+	 */
+	public static function add_third_menu_position() {
+		register_nav_menus(
+			array(
+				'third_menu' => __( 'Third Menu', 'ubc_collab' ),
+			)
+		);
+	}
+
 }
 UBC_ISP_Theme_Functions::init();
