@@ -7,6 +7,13 @@
 		border-bottom-right-radius: 16px;
 	}
 
+	.tablepress-overflow {
+		width: 100%;
+		max-width: 100%;
+		overflow: auto;
+		position: relative;
+	}
+
 	.tablepress {
 		margin: 25px 0;
 		display: table;
@@ -49,25 +56,51 @@
 			&.sorting {
 				padding-right: 50px;
 
-				&::before {
-					content: "";
-					width: 5px;
-					height: 5px;
-					border-top: solid 2px var(--ubc-primary);
-					border-left: solid 2px var(--ubc-primary);
-					rotate: 45deg;
-					right: 24px;
-				}
-
+				&::before,
 				&::after {
 					content: "";
 					width: 5px;
 					height: 5px;
+					margin: 0;
+					position: absolute;
+					display: block;
+					opacity: 0.125;
+					right: 24px;
+					padding: 0;
+				}
+
+				&::before {
+					bottom: 50%;
+					rotate: 45deg;
+					border-top: solid 2px var(--ubc-primary);
+					border-left: solid 2px var(--ubc-primary);
+				}
+
+				&::after {
+					top: 50%;
+					rotate: 45deg;
 					border-bottom: solid 2px var(--ubc-primary);
 					border-right: solid 2px var(--ubc-primary);
-					rotate: 45deg;
-					margin: 0;
-					right: 24px;
+				}
+
+				&:hover {
+
+					/* background: var(--sand-2); */
+					background: var(--sand-1);
+				}
+
+				&.sorting_asc {
+
+					&::after {
+						opacity: 0.6;
+					}
+				}
+
+				&.sorting_desc {
+
+					&::before {
+						opacity: 0.6;
+					}
 				}
 			}
 		}
@@ -95,7 +128,7 @@
 			background-color: var(--sand-3);
 		}
 
-		& tr:hover {
+		& tbody tr:hover {
 			background-color: var(--sand-2);
 
 			& td {
