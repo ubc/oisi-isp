@@ -1,0 +1,170 @@
+/*
+*   Separator Block
+*/
+
+.wp-block-separator {
+	margin-top: 0;
+	margin-bottom: 16px;
+
+	/* border: solid 1px var(--sand-1); */
+	border-width: 1px 1px 0;
+	border-style: solid;
+
+	&:not([class*="has-background"]) {
+		border-color: var(--sand-1);
+	}
+}
+
+.wp-block-separator.is-style-squiggle,
+.wp-block-separator.is-style-squiggle-brown {
+	border: none;
+	width: 55px;
+	height: 6px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	background: url(../../images/squiggle.svg) no-repeat center center;
+}
+
+.wp-block-separator.is-style-squiggle--small,
+.wp-block-separator.is-style-squiggle-brown--small {
+	border: none;
+	width: 30px;
+	height: 4px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	background: url(../../images/squiggle-small.svg) no-repeat center center;
+}
+
+.wp-block-separator.is-style-squiggle-grey {
+	border: none;
+	width: 55px;
+	height: 6px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	background: url(../../images/squiggle-blue.svg) no-repeat center center;
+}
+
+.isp-callout-bar {
+	border-radius: 16px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding: 30px;
+
+	.wp-block-heading {
+		margin: 0;
+	}
+
+	.wp-block-button__link {
+		white-space: nowrap;
+	}
+
+	@media (--query-mx-md) {
+		text-align: center;
+		padding: 24px;
+
+		.wp-block-buttons {
+			justify-content: center;
+		}
+
+		.wp-block-button,
+		.wp-block-button__link {
+			width: 100%;
+		}
+	}
+}
+
+/*  Column Gap */
+:where(.wp-block-columns) {
+	gap: 16px;
+}
+
+@media (--query-sm) {
+
+	:where(.wp-block-columns) {
+		gap: 20px;
+	}
+}
+
+/*  Headings  */
+
+.wp-block-heading.is-style-sub-heading {
+	letter-spacing: 0.15em;
+}
+
+/*  Spacer Block shift */
+
+.isp-block-shift {
+	margin-bottom: -32px;
+}
+
+/* Videos */
+.isp-video {
+	overflow: hidden;
+	margin: 0 -16px;
+
+	.wp-block-group__inner-container {
+		padding: 0;
+	}
+
+	& figure,
+	video {
+		margin: 0;
+		display: block;
+	}
+
+	@media (--query-md) {
+		margin: 0;
+		border-radius: 16px;
+	}
+}
+
+/*  Mobile / Desktop Only */
+
+.isp-mobile-only {
+
+	@media (--query-sm) {
+		display: none !important;
+	}
+}
+
+.isp-desktop-only {
+
+	@media (--query-mx-sm) {
+		display: none !important;
+	}
+}
+
+.isp-mobile--no-break {
+
+	@media (--query-mx-md) {
+
+		& br {
+			display: none !important;
+		}
+	}
+}
+
+[class*="wp-block"] {
+	position: relative;
+}
+
+
+/*
+*   Video Block
+*/
+
+.wp-block-video {
+
+	& video {
+		border-radius: 8px;
+
+	}
+
+	@media (--query-md) {
+
+		& video {
+			border-radius: 16px;
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.isp-card--goal {
+	position: relative;
+
+	.isp-card__inner {
+		position: relative;
+		z-index: 2;
+		pointer-events: none;
+		padding: 24px;
+	}
+
+	.isp-card__link {
+		display: block;
+		background: transparent;
+		transition: var(--transition);
+		border-radius: 16px;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			box-shadow: var(--shadow-2) !important;
+		}
+
+		@media (--query-sm) {
+
+			&:hover,
+			&:focus {
+				background: #fff !important;
+			}
+		}
+	}
+
+	.isp-card__eyebrow {
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 100%;
+		letter-spacing: 1.8px;
+		text-transform: uppercase;
+		color: var(--calcite);
+		margin-bottom: 16px;
+	}
+
+	.isp-card__title {
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 120%;
+		color: var(--bistre);
+		margin: 12px 0;
+	}
+
+	.isp-card__text {
+		margin: 0;
+	}
+}
+
+@media (--query-mx-sm) {
+
+	.has-isp-sand-1-background-color,
+	.has-isp-sand-2-background-color,
+	.has-isp-sand-3-background-color {
+
+		.isp-card--goal {
+
+			.isp-card__link {
+				background: #fff;
+			}
+		}
+	}
+
+	.isp-card--goal {
+
+		.isp-card__link {
+			background: var(--sand-2);
+		}
+	}
+}

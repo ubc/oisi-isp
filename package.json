@@ -1,0 +1,35 @@
+{
+	"name": "ubc_isp",
+	"version": "1.0.0",
+	"description": "UBC Indigenous Strategic Plan",
+	"author": "Meet Goat",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Theme"
+	],
+	"devDependencies": {
+		"@csstools/postcss-global-data": "^1.0.3",
+		"@wordpress/prettier-config": "^2.20.0",
+		"@wordpress/scripts": "^19.2.4",
+		"laravel-mix": "^6.0.49",
+		"postcss": "^8.4.24",
+		"postcss-custom-media": "^9.1.5",
+		"postcss-preset-env": "^8.4.2",
+		"prettier": "npm:wp-prettier@^2.8.5",
+		"webpack": "^5.85.1"
+	},
+	"scripts": {
+		"build": "mix",
+		"watch": "mix watch",
+		"production": "mix --production",
+		"lint:css": "wp-scripts lint-style ./assets/css",
+		"lint:js": "wp-scripts lint-js ./assets/js"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^8.0.9",
+		"@wordpress/blocks": "^11.1.4",
+		"@wordpress/i18n": "^4.2.4",
+		"simplebar": "^6.2.5"
+	}
+}

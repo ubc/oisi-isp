@@ -1,0 +1,29 @@
+div .wp-block-post-template {
+	margin: 0;
+	padding: 0;
+}
+
+.wp-block-post-template.is-flex-container.is-flex-container.columns-4 {
+	container-type: inline-size;
+
+	@container (max-width: 1000px) {
+
+		.type-post {
+			width: calc(33.333% - 0.9375em);
+		}
+	}
+
+	@container (max-width: 800px) {
+
+		.type-post {
+			width: calc(50% - 0.9375em);
+		}
+	}
+
+	@container (max-width: 600px) {
+
+		.type-post {
+			width: calc(100%);
+		}
+	}
+}

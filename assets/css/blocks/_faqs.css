@@ -1,0 +1,96 @@
+/*
+*   Accordion Block
+*/
+
+.isp-faqs {
+
+	.isp-faq__filter {
+		display: none;
+	}
+
+	.isp-header {
+		position: relative;
+		overflow: hidden;
+
+		.wp-block-columns {
+			position: relative;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				width: 100vw;
+				background: var(--header-gradient);
+				border-bottom-right-radius: 160px;
+			}
+		}
+	}
+}
+
+.isp-faq__filters {
+	min-height: 80px;
+}
+
+.isp-faq__filters__container {
+	display: none;
+}
+
+.isp-faq__filters__inner {
+	margin: 40px 0 !important;
+
+	@media (--query-md) {
+		margin: 64px 0 84px !important;
+	}
+}
+
+.isp-faqs--js {
+
+	.isp-faq__filters__container {
+		display: block;
+	}
+}
+
+.isp-faq__filters__buttons {
+
+	.wp-element-button {
+		border-radius: 4px !important;
+		border: 1px solid var(--bistre) !important;
+		color: var(--bistre) !important;
+		background: #fff !important;
+		transition: var(--transition) !important;
+		padding: 3px 12px !important;
+		font-size: 16px !important;
+		letter-spacing: 0 !important;
+		text-transform: none !important;
+
+		&:hover,
+		&:focus,
+		&.is-active {
+			background: var(--bistre) !important;
+			color: #fff !important;
+		}
+	}
+}
+
+.isp-faq__filter__results {
+	display: none;
+	font-family: var(--opensans);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+
+	& span {
+		font-weight: 700;
+	}
+}
+
+.isp-faqs--filtered,
+.isp-faqs--searched {
+
+	.isp-faq__filter__results {
+		display: block;
+	}
+}

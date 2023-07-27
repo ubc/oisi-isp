@@ -1,0 +1,111 @@
+div [class*="wp-block"].isp-header {
+
+	@media (--query-mx-sm) {
+		padding-top: 48px;
+	}
+}
+
+.isp-header--content {
+	max-width: 580px;
+	padding-bottom: 30px;
+
+	> .wp-block-group__inner-container {
+		padding: 0;
+	}
+}
+
+.isp-header--image-col {
+	position: relative;
+}
+
+.isp-header--image {
+	position: relative;
+
+	& img {
+		position: absolute;
+		margin: 0;
+		width: 350px;
+		height: 460px;
+		object-fit: cover;
+		max-width: none;
+		border-radius: 16px 0 0 240px;
+	}
+}
+
+.isp-header--squiggle {
+	position: absolute;
+	z-index: 5;
+	top: 50px;
+	left: -20px;
+
+	.wp-block-separator {
+		margin: 2px 0;
+	}
+}
+
+@media (--query-mx-sm) {
+
+	.isp-header__featured-img {
+		overflow: hidden;
+	}
+
+	.isp-header__featured-img img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		aspect-ratio: 18/7;
+		border-radius: 0 0 0 80px;
+	}
+
+	.isp-header__featured-img__squiggle {
+		background: url(../../images/squiggle-white.svg) no-repeat center center;
+		background-size: contain;
+		position: absolute;
+		z-index: 20;
+		width: 55px;
+		height: 24px;
+		top: 32px;
+		right: -20px;
+	}
+
+	.isp-header--1 {
+
+		.ubc-isp-nav__container {
+			display: none;
+		}
+	}
+
+	.isp-header--3 {
+
+		.isp-breadcrumbs--small {
+			background: var(--sand-2);
+		}
+	}
+}
+
+/* Featured Image */
+@media (--query-sm) {
+
+	.isp-header__featured-img__squiggle {
+		display: none;
+	}
+
+	.isp-header__featured-img {
+		position: absolute;
+		right: 0;
+		width: 24%;
+		margin: 0;
+		max-width: none;
+		top: 100px;
+		z-index: 1;
+
+		& img {
+			min-width: 100%;
+			width: calc(100% + (50vw - 652px));
+			height: 460px;
+			max-width: none;
+			object-fit: cover;
+			border-radius: 16px 0 0 240px;
+		}
+	}
+}

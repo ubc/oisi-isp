@@ -1,0 +1,139 @@
+.isp-background {
+	position: relative;
+	overflow: hidden;
+
+	> * {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.isp-background--1 {
+
+	@media (--query-mx-md) {
+		background: var(--sand-3);
+	}
+
+	@media (--query-md) {
+		background: none;
+	}
+
+	.isp-background__inner {
+		position: relative;
+
+		@media (--query-mx-md) {
+		}
+
+		@media (--query-md) {
+
+			&::before {
+				content: "";
+				pointer-events: none;
+				position: absolute;
+				top: 0;
+				right: 15%;
+				bottom: 0;
+				width: 100vw;
+				background: var(--sand-3);
+				border-radius: 0 48px 480px 0;
+			}
+
+			> * {
+				position: relative;
+				z-index: 2;
+			}
+		}
+	}
+
+	&.isp-background--desktop-only {
+
+		@media (--query-mx-md) {
+			background: transparent !important;
+		}
+	}
+
+	&.isp-background--white {
+
+		@media (--query-mx-md) {
+			background: #fff;
+		}
+
+		@media (--query-md) {
+			background: none;
+
+			.isp-background__inner {
+
+				&::before {
+					background: #fff;
+				}
+			}
+		}
+	}
+
+}
+
+.isp-team-background {
+	background: var(--sand-3);
+
+	@media (--query-md) {
+		border-radius: 16px 16px 160px 16px;
+	}
+}
+
+.isp-background__content {
+	position: relative;
+	z-index: 20;
+}
+
+[class*="isp-circle"] {
+	position: relative;
+
+	/*
+  > * {
+    position: relative;
+    z-index: 2;
+  } */
+
+	&::before {
+		content: "";
+		position: absolute;
+		pointer-events: none;
+		z-index: 0;
+	}
+}
+
+.isp-circle--left--1 {
+
+	&::before {
+		top: 0;
+		bottom: 0;
+		width: 100vw;
+		right: 52%;
+		background: #fff;
+		border-radius: 0 0 320px 0;
+	}
+}
+
+.isp-circle--right-1 {
+
+	&::before {
+		top: -200px;
+		bottom: -50px;
+		right: -24px;
+		left: 58%;
+		background: #fff;
+		border-radius: 320px 0 0 0;
+		z-index: 0;
+	}
+}
+
+.isp-header-circle {
+	position: absolute !important;
+	top: 0;
+	bottom: 0;
+	right: 33px;
+	background: var(--sand-2);
+	width: 100vw;
+	pointer-events: none;
+	border-top-right-radius: 160px;
+}

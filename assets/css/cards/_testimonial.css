@@ -1,0 +1,97 @@
+.isp-testimonial__inner {
+	border-radius: 16px 16px 160px 16px;
+	position: relative;
+
+	.wp-block-group__inner-container {
+		padding: 0;
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 235px;
+		width: 258px;
+		top: -16px;
+		left: -16px;
+		background: url(../../images/quote-icon.svg) no-repeat center center;
+		background-size: cover;
+		pointer-events: none;
+		z-index: 1;
+	}
+
+	@media (--query-mx-sm) {
+		border-radius: 16px 16px 80px 16px;
+		overflow: hidden;
+
+		&::before {
+			left: auto;
+			top: auto;
+			bottom: 0;
+			right: 0;
+			height: 99px;
+			width: 108px;
+		}
+	}
+}
+
+.isp-testimonial__content {
+	max-width: 600px !important;
+	position: relative;
+	padding: 32px 24px;
+	margin: 0 auto !important;
+	z-index: 2;
+
+	.wp-block-heading {
+		margin: 0;
+	}
+
+	@media (--query-sm) {
+		padding: 116px 24px;
+	}
+}
+
+.isp-testimonial__text {
+	color: var(--bistre);
+	font-size: 23px !important;
+	font-style: italic !important;
+	font-weight: 500 !important;
+	line-height: 110%;
+	letter-spacing: -0.69px;
+
+	@media (--query-sm) {
+		font-size: 38px !important;
+		letter-spacing: -1.9px;
+	}
+}
+
+.isp-testimonial__meta {
+	margin-top: 24px;
+
+	.wp-block-group {
+
+		@media (--query-mx-sm) {
+			display: block;
+		}
+	}
+
+	.wp-block-group__inner-container {
+		padding: 0;
+	}
+
+	.wp-block-heading {
+		padding: 0;
+		margin: 0;
+		white-space: nowrap;
+	}
+
+	.wp-block-heading,
+	.wp-block-separator {
+		margin: 0;
+		flex: 0;
+	}
+
+	.wp-block-separator {
+		margin: 8px 0 !important;
+	}
+}

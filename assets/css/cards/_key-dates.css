@@ -1,0 +1,195 @@
+.isp-key-date {
+	margin-top: 0 !important;
+
+	& a {
+		text-decoration: none;
+		margin-top: 0;
+
+		&:hover,
+		&:focus {
+
+			.isp-upcoming-event__title {
+				color: var(--calcite);
+			}
+		}
+	}
+
+	.isp-upcoming-event__title {
+		transition: var(--transition);
+	}
+}
+
+.isp-key-date__inner {
+	position: relative;
+	border-radius: 8px;
+	padding: 4px;
+	box-shadow: var(--shadow-0);
+	transition: var(--transition);
+
+	.wp-block-group__inner-container {
+		padding: 0;
+	}
+
+	.wp-block-columns {
+		margin: 0;
+	}
+
+	& figure,
+	img {
+		margin: 0;
+	}
+
+	&:hover {
+		box-shadow: var(--shadow-2);
+	}
+}
+
+.isp-key-date__date {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px 0 0 8px;
+
+	.wp-block-heading {
+		margin: 0;
+	}
+
+	.wp-block-columns {
+		justify-content: center;
+		gap: 0;
+
+		.wp-block-column {
+			width: auto;
+			flex: 0 0 auto;
+		}
+
+		@media (--query-sm) {
+			gap: 4px;
+		}
+	}
+
+	@media (--query-mx-sm) {
+
+		.wp-block-heading {
+			font-size: 14px !important;
+		}
+	}
+}
+
+.isp-key-date__details {
+	padding: 8px 24px;
+	padding-left: 0;
+
+	.wp-block-heading,
+	p {
+		margin: 0;
+	}
+
+	.wp-block-button {
+		text-align: right;
+		display: block;
+		width: 100%;
+	}
+
+	@media (--query-sm) {
+		padding: 22px 24px;
+		padding-left: 8px;
+
+		.isp-key-date__date-column {
+			flex-basis: 135px !important;
+		}
+	}
+}
+
+.isp-upcoming-events__button-column {
+	text-align: right;
+}
+
+@media (--query-mx-sm) {
+
+	.isp-key-date__date-column {
+		flex-basis: 55px !important;
+	}
+
+	.isp-key-date__details .wp-block-buttons .wp-block-button__link {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		font-size: 0;
+		opacity: 0;
+	}
+}
+
+.isp-key-date-alt {
+
+	.isp-key-date__inner {
+		padding: 0;
+	}
+
+	.wp-block-separator {
+		margin: 0;
+	}
+
+	.isp-key-date__inner {
+
+		&:hover,
+		&:focus {
+			box-shadow: var(--shadow-0);
+		}
+	}
+
+	& a {
+		padding: 8px 0;
+		display: block;
+		margin: 0;
+		margin-top: 0;
+
+		.wp-block-columns {
+			gap: 16px;
+		}
+
+		@media (--query-md) {
+			padding: 12px 32px;
+			gap: 24px;
+		}
+	}
+
+	@media (--query-mx-sm) {
+
+		.isp-key-date__details {
+			padding: 4px 0;
+		}
+
+		& a {
+			padding: 12px 0;
+
+			.wp-block-columns {
+				gap: 4px;
+			}
+		}
+
+		.isp-key-date__date {
+			display: block;
+			margin: 0;
+
+			& br {
+				display: none;
+			}
+
+			.wp-block-columns {
+				gap: 12px;
+			}
+		}
+	}
+}
+
+.isp-key-date {
+	margin: 0 !important;
+
+	.isp-key-date__inner {
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+
+:root {
+	--opensans: "Open Sans", sans-serif;
+
+	--font-size-h1: 29px;
+	--font-size-h2: 26px;
+	--font-size-h3: 23px;
+	--font-size-h4: 20px;
+	--font-size-h5: 18px;
+	--font-size-h6: 16px;
+
+	--font-size-p-xl: 18px;
+	--font-size-p-lg: 17px;
+	--font-size-p: 16px;
+	--font-size-p-sm: 15px;
+
+	--font-size-subtitle-xl: 20px;
+	--font-size-subtitle-lg: 18px;
+	--font-size-subtitle: 16px;
+	--font-size-subtitle-sm: 14px;
+
+	--font-size-eyebrow: 14px;
+	--font-size-eyebrow-sm: 12px;
+
+	--font-size-button: 14px;
+	--font-size-blog-date: 12px;
+
+	@media (--query-sm) {
+		--font-size-h1: 40px;
+		--font-size-h2: 30px;
+		--font-size-h3: 26px;
+		--font-size-h4: 23px;
+		--font-size-h5: 20px;
+		--font-size-h6: 16px;
+
+		--font-size-p-xl: 20px;
+		--font-size-p-lg: 18px;
+		--font-size-p: 16px;
+		--font-size-p-sm: 14px;
+	}
+
+	@media (--query-md) {
+		--font-size-h1: 48px;
+		--font-size-h2: 39px;
+		--font-size-h3: 32px;
+		--font-size-h4: 25px;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	--wp--preset--font-size--small: var(--font-size-h5) !important;
+	--wp--preset--font-size--medium: var(--font-size-h4) !important;
+	--wp--preset--font-size--large: var(--font-size-h3) !important;
+	--wp--preset--font-size--x-large: var(--font-size-h2) !important;
+}
+
+.is-style-sub-heading {
+	--wp--preset--font-size--small: var(--font-size-subtitle-sm) !important;
+	--wp--preset--font-size--medium: var(--font-size-subtitle) !important;
+	--wp--preset--font-size--large: var(--font-size-subtitle-lg) !important;
+	--wp--preset--font-size--x-large: var(--font-size-subtitle-xl) !important;
+}
+
+p,
+li {
+	color: var(--bistre);
+	--wp--preset--font-size--small: var(--font-size-p-sm) !important;
+	--wp--preset--font-size--medium: var(--font-size-p) !important;
+	--wp--preset--font-size--large: var(--font-size-p-lg) !important;
+	--wp--preset--font-size--x-large: var(--font-size-p-xl) !important;
+}
+
+.entry-content ol,
+.entry-content ul {
+	list-style: outside;
+	padding-left: 24px;
+}

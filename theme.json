@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"color": {},
+		"typography": {},
+		"spacing": {},
+		"layout": {
+			"contentSize": "1280px",
+			"wideSize": "1400px"
+		}
+	}
+}

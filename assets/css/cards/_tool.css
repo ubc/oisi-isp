@@ -1,0 +1,133 @@
+.isp-card--tool {
+	margin: 16px 0;
+
+	.isp-card__inner {
+		border-radius: 16px;
+
+		.wp-block-group__inner-container {
+			padding: 0;
+		}
+	}
+
+	/* .wp-block-group__inner-container{
+        max-width: 1032px;
+    } */
+	.wp-block-columns {
+		padding: 0;
+	}
+
+	.isp-card__content {
+		padding: 80px 24px 80px 35px;
+
+		.wp-block-group__inner-container {
+		}
+
+		.wp-block-heading {
+			margin: 0 0 16px;
+		}
+
+		.wp-block-buttons {
+			margin-top: 32px;
+		}
+
+		@media (--query-lg) {
+			padding: 80px 20px 80px 85px;
+		}
+	}
+
+	.isp-card__image {
+		padding: 32px;
+		padding-left: 0;
+		text-align: right;
+		position: relative;
+		float: right;
+		height: 100%;
+		display: flex;
+		align-items: center;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 42px;
+			right: 0;
+			background: var(--sand-1);
+			border-radius: 0 16px 16px 127.5px;
+			z-index: 1;
+		}
+	}
+
+	.wp-block-image {
+		margin: 0;
+
+		& img {
+			margin: 0;
+			position: relative;
+			z-index: 2;
+		}
+
+		& img {
+			aspect-ratio: 0.77;
+			max-width: 262px;
+			width: 100%;
+			border-radius: 16px;
+			box-shadow: var(--shadow-1);
+			border: solid 1px #fff;
+		}
+	}
+
+	@media (--query-mx-sm) {
+
+		.isp-card__inner {
+			padding: 32px 24px 24px;
+			display: grid;
+			grid-template-columns: 1fr clamp(100px, 150px, 40%);
+			grid-template-areas: "title image" "content content";
+			margin: 60px 0 0;
+			gap: 16px;
+
+			.wp-block-separator {
+				margin: 0 0 16px;
+			}
+
+			.isp-card__content,
+			.wp-block-group__inner-container,
+			.wp-block-column {
+				display: contents;
+			}
+
+			.isp-card__title {
+				grid-area: title;
+				align-self: end;
+			}
+
+			.wp-block-heading {
+				margin: 0;
+			}
+
+			.isp-card__image {
+				grid-area: image;
+				padding: 0;
+				position: relative;
+				top: -56px;
+				margin-bottom: -56px;
+				height: auto;
+
+				&::before {
+					display: none;
+				}
+			}
+
+			.isp-card__text {
+				grid-area: content;
+			}
+
+			.wp-block-button,
+			.wp-block-button__link {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
