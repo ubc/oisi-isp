@@ -54,7 +54,7 @@
 							<div class="wp-block-group isp-timeline__decade__image">
 								<!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"isp-timeline__decade__img"} -->
 								<figure class="wp-block-image size-large isp-timeline__decade__img"><img
-										src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png" alt="" />
+										src="/wp-content/themes/oisi-isp/patterns/images/placeholder.png" alt="" />
 								</figure>
 								<!-- /wp:image -->
 							</div>
@@ -164,7 +164,7 @@
 							<div class="wp-block-group isp-timeline__decade__image">
 								<!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"isp-timeline__decade__img"} -->
 								<figure class="wp-block-image size-large isp-timeline__decade__img"><img
-										src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png" alt="" />
+										src="/wp-content/themes/oisi-isp/patterns/images/placeholder.png" alt="" />
 								</figure>
 								<!-- /wp:image -->
 							</div>
@@ -312,7 +312,7 @@
 							<div class="wp-block-group isp-timeline__decade__image">
 								<!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"isp-timeline__decade__img"} -->
 								<figure class="wp-block-image size-large isp-timeline__decade__img"><img
-										src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png" alt="" />
+										src="/wp-content/themes/oisi-isp/patterns/images/placeholder.png" alt="" />
 								</figure>
 								<!-- /wp:image -->
 							</div>
@@ -460,7 +460,7 @@
 							<div class="wp-block-group isp-timeline__decade__image">
 								<!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"isp-timeline__decade__img"} -->
 								<figure class="wp-block-image size-large isp-timeline__decade__img"><img
-										src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png" alt="" />
+										src="/wp-content/themes/oisi-isp/patterns/images/placeholder.png" alt="" />
 								</figure>
 								<!-- /wp:image -->
 							</div>
@@ -806,7 +806,7 @@
 							<div class="wp-block-group isp-timeline__decade__image">
 								<!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"isp-timeline__decade__img"} -->
 								<figure class="wp-block-image size-large isp-timeline__decade__img"><img
-										src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png" alt="" />
+										src="/wp-content/themes/oisi-isp/patterns/images/placeholder.png" alt="" />
 								</figure>
 								<!-- /wp:image -->
 							</div>

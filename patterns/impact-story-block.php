@@ -18,7 +18,7 @@
 		<!-- /wp:html -->
 
 		<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-		<figure class="wp-block-image size-full"><img src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png"
+		<figure class="wp-block-image size-full"><img src="/wp-content/themes/oisi-isp/patterns/images/placeholder.png"
 				alt="" /></figure>
 		<!-- /wp:image -->
 

@@ -29,7 +29,7 @@
 			<div class="wp-block-buttons"><!-- wp:button -->
 				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Download the Plan <img
 							class="wp-image-224" style="width: 32px;"
-							src="http://ubcisp-staging.loafingshed.ca/wp-content/themes/ubc-isp/assets/images/pdf.svg"
+							src="http://ubcisp-staging.loafingshed.ca/wp-content/themes/oisi-isp/assets/images/pdf.svg"
 							alt=""></a></div>
 				<!-- /wp:button -->
 			</div>

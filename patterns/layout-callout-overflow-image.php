@@ -53,7 +53,7 @@
 					<div class="wp-block-group isp-cta__images">
 						<!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"is-style-default isp-cta__image--background"} -->
 						<figure class="wp-block-image size-large is-style-default isp-cta__image--background"><img
-								src="/wp-content/themes/ubc-isp/patterns/images/cloud-background.png" alt="" /></figure>
+								src="/wp-content/themes/oisi-isp/patterns/images/cloud-background.png" alt="" /></figure>
 						<!-- /wp:image -->
 					</div>
 					<!-- /wp:group -->

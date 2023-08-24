@@ -14,7 +14,7 @@
 
 <!-- wp:group {"className":"isp-story-card","layout":{"type":"constrained"}} -->
 <div class="wp-block-group isp-story-card"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-	<figure class="wp-block-image size-full"><img src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png"
+	<figure class="wp-block-image size-full"><img src="/wp-content/themes/oisi-isp/patterns/images/placeholder.png"
 			alt="" /></figure>
 	<!-- /wp:image -->
 

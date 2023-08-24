@@ -34,11 +34,11 @@
 
 					<!-- wp:buttons -->
 					<div class="wp-block-buttons"><!-- wp:button -->
-						<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Facilitator’s Guide<img class="wp-image-383" style="width: 32px;" src="/wp-content/themes/ubc-isp/patterns/images/pdf.png" alt=""></a></div>
+						<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Facilitator’s Guide<img class="wp-image-383" style="width: 32px;" src="/wp-content/themes/oisi-isp/patterns/images/pdf.png" alt=""></a></div>
 						<!-- /wp:button -->
 
 						<!-- wp:button -->
-						<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Workshop Slides <img class="wp-image-383" style="width: 32px;" src="/wp-content/themes/ubc-isp/patterns/images/ppt.png" alt=""></a></div>
+						<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Workshop Slides <img class="wp-image-383" style="width: 32px;" src="/wp-content/themes/oisi-isp/patterns/images/ppt.png" alt=""></a></div>
 						<!-- /wp:button -->
 					</div>
 					<!-- /wp:buttons -->
