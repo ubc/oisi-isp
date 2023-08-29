@@ -20,18 +20,18 @@
 			<div class="wp-block-group isp-photogrid--images">
 				<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 				<figure class="wp-block-image size-large"><img
-						src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png" alt="" /></figure>
+						src="/wp-content/themes/oisi-isp/patterns/images/placeholder.png" alt="" /></figure>
 				<!-- /wp:image -->
 
 				<!-- wp:image {"id":305,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
 				<figure class="wp-block-image size-large is-style-default"><img
-						src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png" alt="" class="wp-image-305" />
+						src="/wp-content/themes/oisi-isp/patterns/images/placeholder.png" alt="" class="wp-image-305" />
 				</figure>
 				<!-- /wp:image -->
 
 				<!-- wp:image {"id":305,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
 				<figure class="wp-block-image size-large is-style-default"><img
-						src="/wp-content/themes/ubc-isp/patterns/images/placeholder.png" alt="" class="wp-image-305" />
+						src="/wp-content/themes/oisi-isp/patterns/images/placeholder.png" alt="" class="wp-image-305" />
 				</figure>
 				<!-- /wp:image -->
 			</div>

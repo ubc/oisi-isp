@@ -3,7 +3,7 @@ const postcssCustomMedia = require('postcss-custom-media');
 const postcssGlobalData = require('@csstools/postcss-global-data');
 
 mix.setPublicPath( 'dist/' );
-mix.setResourceRoot( '/wp-content/themes/ubc-isp/dist/' );
+mix.setResourceRoot( '/wp-content/themes/oisi-isp/dist/' );
 
 mix.webpackConfig( {
 	stats: {

@@ -165,7 +165,7 @@
 		<div class="wp-block-column isp-layout--overflow__image-column">
 			<!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"isp-layout--overflow__image"} -->
 			<figure class="wp-block-image size-large isp-layout--overflow__image"><img
-					src="/wp-content/themes/ubc-isp/patterns/images/cta-1.jpeg" alt="" /></figure>
+					src="/wp-content/themes/oisi-isp/patterns/images/cta-1.jpeg" alt="" /></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

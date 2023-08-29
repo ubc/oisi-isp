@@ -26,7 +26,7 @@
 						<div class="wp-block-group isp-icon-bucket--inner">
 							<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 							<figure class="wp-block-image size-large"><img
-									src="/wp-content/themes/ubc-isp/patterns/images/icon-file.png" alt="" /></figure>
+									src="/wp-content/themes/oisi-isp/patterns/images/icon-file.png" alt="" /></figure>
 							<!-- /wp:image -->
 
 							<!-- wp:heading {"level":5,"textColor":"isp-bistre","fontSize":"small"} -->
@@ -65,7 +65,7 @@
 						<div class="wp-block-group isp-icon-bucket--inner">
 							<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 							<figure class="wp-block-image size-large"><img
-									src="/wp-content/themes/ubc-isp/patterns/images/icon-target.png" alt="" /></figure>
+									src="/wp-content/themes/oisi-isp/patterns/images/icon-target.png" alt="" /></figure>
 							<!-- /wp:image -->
 
 							<!-- wp:heading {"level":5,"textColor":"isp-bistre","fontSize":"small"} -->
@@ -104,7 +104,7 @@
 						<div class="wp-block-group isp-icon-bucket--inner">
 							<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
 							<figure class="wp-block-image size-large"><img
-									src="/wp-content/themes/ubc-isp/patterns/images/icon-calculator.png" alt="" />
+									src="/wp-content/themes/oisi-isp/patterns/images/icon-calculator.png" alt="" />
 							</figure>
 							<!-- /wp:image -->
 

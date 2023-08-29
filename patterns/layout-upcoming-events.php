@@ -29,7 +29,7 @@
 							<!-- /wp:heading -->
 
 							<!-- wp:image {"sizeSlug":"large"} -->
-							<figure class="wp-block-image size-large"><img src="/wp-content/themes/ubc-isp/placeholder/information.png" alt="" /></figure>
+							<figure class="wp-block-image size-large"><img src="/wp-content/themes/oisi-isp/placeholder/information.png" alt="" /></figure>
 							<!-- /wp:image -->
 						</div>
 						<!-- /wp:group -->
@@ -182,7 +182,7 @@
 							<!-- /wp:heading -->
 
 							<!-- wp:image {"sizeSlug":"large"} -->
-							<figure class="wp-block-image size-large"><img src="/wp-content/themes/ubc-isp/placeholder/consultation.png" alt="" /></figure>
+							<figure class="wp-block-image size-large"><img src="/wp-content/themes/oisi-isp/placeholder/consultation.png" alt="" /></figure>
 							<!-- /wp:image -->
 						</div>
 						<!-- /wp:group -->
